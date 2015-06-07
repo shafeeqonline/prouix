@@ -1,0 +1,147 @@
+---
+title: All Elements
+heading: All Elements
+layout: T01.hbs
+---
+
+<style>
+  section {
+    margin-bottom: 100px;
+  }
+  
+  section > h1:first-child {
+    background-color: #9797A4;
+  }
+  .colors li{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 60px;
+    width: 100px;
+    height: 100px;
+    border-radius: 54px;
+    text-align: center;
+  }
+  .colors li span {
+    position: absolute;
+    bottom: -40px;
+    left: 21px;
+  }
+  .field-container {
+    margin-bottom: 20px;
+  }
+  .grid-sys .row{
+    text-align: center;  
+  }
+  .grid-sys .row >div:nth-of-type(odd) {
+    background-color: #787878;
+  }
+  .grid-sys .row >div:nth-of-type(2n) {
+    background-color: #C8C8C8;
+  }
+  #element-select {
+    position: fixed;
+    margin-top: 10px;
+    right: 7%;
+  }
+  .icons dt i {
+    font-size: 30px;
+  }
+  .icons .row div:hover {
+    background: #eaf7fc;
+  }
+  .icons dt {
+    text-align: center;
+  }
+</style>
+
+<section class="colors" id="content-colors">
+  <h1>Colors</h1>
+  <hr>
+  <ul class="colors row list-unstyled">
+    <li style="height:100px;" class="col-xs-1 bg-brand-blue"><span>$brand-blue</span></li>
+    <li style="height:100px;" class="col-xs-1 bg-brand-red"><span>$brand-red</span></li>
+    <li style="height:100px;" class="col-xs-1 bg-brand-yellow"><span>$brand-yellow</span></li>
+    <li style="height:100px;" class="col-xs-1 bg-brand-green"><span>$brand-green</span></li>
+    <li style="height:100px;" class="col-xs-1 bg-brand-black"><span>$brand-black</span></li>
+    <li style="height:100px;" class="col-xs-1 bg-brand-black-highlight"><span>$brand-black-highlight</span></li>
+    <li style="height:100px;" class="col-xs-1 bg-brand-black-panel"><span>$brand-black-panel</span></li>
+    <li style="height:100px;" class="col-xs-1 bg-brand-orange"><span>$brand-orange</span></li>
+    <li style="height:100px;" class="col-xs-1 bg-brand-darkened-blue"><span>$brand-darkened-blue</span></li>
+    <li style="height:100px;" class="col-xs-1 bg-brand-darkened-red"><span>$brand-darkened-red</span></li>
+  </ul>
+</section>
+
+<section class="headings" id="content-headings">
+  <h1>Headings</h1>
+  <hr>
+  <h1>Heading H1</h1>
+  <h2>Heading H2</h2>
+  <h3>Heading H3</h3>
+  <h4>Heading H4</h4>
+  <h5>Heading H5</h5>
+  <h6>Heading H6</h6>
+  <div class="row">
+    <div class="col-md-4">
+      <h1>h1. Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="col-md-4">
+      <h2>h2. Grumpy wizards make toxic brew for the evil Queen and Jack.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="col-md-4">
+      <h3>h3. Grumpy wizards make toxic brew for the evil Queen and Jack.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</section>
+
+<section id="content-paragraphs">
+  <h1>Paragraph</h1>
+  <hr>
+  <p class="intro-text">p.intro-text - This is an intro text! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quos aliquid impedit accusamus voluptates earum vitae dignissimos explicabo, facere! Libero tempore voluptate optio quas earum ullam dolores atque perferendis ad.</p>  
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quos aliquid impedit accusamus voluptates earum vitae dignissimos explicabo, facere! Libero tempore voluptate optio quas earum ullam dolores atque perferendis ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section>
+
+<section class="lists" id="content-lists">
+  <h1>Lists</h1>
+  <hr>
+  <h2>Unordered Lists</h2>
+  <ul>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Consectetur adipiscing elit</li>
+      <li>Integer molestie lorem at massa</li>
+      <li>Facilisis in pretium nisl aliquet</li>
+      <li>Nulla volutpat aliquam velit
+        <ul>
+          <li>Phasellus iaculis neque</li>
+          <li>Purus sodales ultricies</li>
+          <li>Vestibulum laoreet porttitor sem</li>
+          <li>Ac tristique libero volutpat at</li>
+        </ul>
+      </li>
+      <li>Faucibus porta lacus fringilla vel</li>
+      <li>Aenean sit amet erat nunc</li>
+      <li>Eget porttitor lorem</li>
+    </ul>
+</section>

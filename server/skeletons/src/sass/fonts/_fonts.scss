@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'Alive';
+  src: url('fonts/Alive.eot?#iefix') format('embedded-opentype'),  url('fonts/Alive.woff') format('woff'), url('fonts/Alive.ttf')  format('truetype'), url('fonts/Alive.svg#Alive') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('fonts/Oswald.eot?#iefix') format('embedded-opentype'),url('fonts/Oswald.woff') format('woff'), url('fonts/Oswald.ttf')  format('truetype'), url('fonts/Oswald.svg#Oswald') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Oswald-Bold';
+  src: url('fonts/Oswald-Bold.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/Oswald-Bold.woff') format('woff'), url('fonts/Oswald-Bold.ttf')  format('truetype'), url('fonts/Oswald-Bold.svg#Oswald-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'UniversLTPro-55Roman';
+  src: url('fonts/UniversLTPro-55Roman.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/UniversLTPro-55Roman.woff') format('woff'), url('fonts/UniversLTPro-55Roman.ttf')  format('truetype'), url('fonts/UniversLTPro-55Roman.svg#UniversLTPro-55Roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'UniversLTPro-45Light';
+  src: url('fonts/UniversLTPro-45Light.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/UniversLTPro-45Light.woff') format('woff'), url('fonts/UniversLTPro-45Light.ttf')  format('truetype'), url('fonts/UniversLTPro-45Light.svg#UniversLTPro-45Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: "custom-font";
+  src:url("fonts/custom-font.eot");
+  src:url("fonts/custom-font.eot?#iefix") format("embedded-opentype"),
+    url("fonts/custom-font.woff") format("woff"),
+    url("fonts/custom-font.ttf") format("truetype"),
+    url("fonts/custom-font.svg#custom-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "custom-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "custom-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-social-twitter:before {
+  content: "a";
+}
+.icon-google-plus:before {
+  content: "c";
+}
+.icon-facebook:before {
+  content: "d";
+}
+.icon-instagram:before {
+  content: "e";
+}
+.icon-angle-right:before {
+  content: "f";
+}
+.icon-angle-left:before {
+  content: "g";
+}
+.icon-angle-down:before {
+  content: "h";
+}
+.icon-angle-up:before {
+  content: "i";
+}
+.icon-x:before {
+  content: "j";
+}
+.icon-bus-two:before {
+  content: "k";
+}
+.icon-car-front:before {
+  content: "l";
+}
+.icon-buy-tickets:before {
+  content: "m";
+}
+.icon-ptint:before {
+  content: "n";
+}
+.icon-mail-bubble:before {
+  content: "p";
+}
+.icon-chevron-left:before {
+  content: "q";
+}
+.icon-chevron-right:before {
+  content: "r";
+}
+.icon-chevron-up:before {
+  content: "s";
+}
+.icon-alert:before {
+  content: "t";
+}
+.icon-calendar:before {
+  content: "v";
+}
+.icon-play:before {
+  content: "w";
+}
+.icon-pause:before {
+  content: "x";
+}
+.icon-volume-up:before {
+  content: "y";
+}
+.icon-volume-down:before {
+  content: "z";
+}
+.icon-search:before {
+  content: "A";
+}
+.icon-split:before {
+  content: "B";
+}
+.icon-chevron-down:before {
+  content: "C";
+}
+.icon-regional-railways:before {
+  content: "D";
+}
+.icon-camera-1:before {
+  content: "E";
+}
+.icon-check:before {
+  content: "F";
+}
+.icon-youtube:before {
+  content: "b";
+}
+.icon-pinterest:before {
+  content: "G";
+}
+.icon-information-circle:before {
+  content: "o";
+}
+.icon-plus-1:before {
+  content: "H";
+}
+.icon-minus-1:before {
+  content: "J";
+}
+.icon-chevron-down-1:before {
+  content: "I";
+}
+.icon-sms-bubble:before {
+  content: "u";
+}
+.icon-tick:before {
+  content: "K";
+}

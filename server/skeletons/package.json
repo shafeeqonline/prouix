@@ -1,0 +1,8 @@
+{
+  "name": "prouix",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.10.0",
+    "express": "^4.10.6"
+   }
+}

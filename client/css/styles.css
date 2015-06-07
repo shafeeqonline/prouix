@@ -1,0 +1,20 @@
+body{
+	background:#4ea082;
+}
+div{
+	margin:12px;
+	width:60%;
+}
+.predefined input[name='version']{
+	float: right;
+	margin-right:50%;
+}
+input{
+	margin:0 15px;
+	margin-left: 0;
+	padding-left: 15px;
+}
+h3{
+	margin-top: 50px; 
+}
+

@@ -1,0 +1,77 @@
+{
+	"floatnav" : {
+		"dir" : [
+			{
+				"dirName" : "Current Page",
+				"dirtaget" : "mypage.html",
+				"pageid" : "124578",
+				"subDir" : [
+					{
+						"subDirName" : "Gallery",
+						"subDirTarget" : "gallery.html",
+						"pageid" : "12495978"
+					},
+					{
+						"subDirName" : "My Page",
+						"subDirTarget" : "gallery.html",
+						"pageid" : "12495978"
+					},
+					{
+						"subDirName" : "Login",
+						"subDirTarget" : "gallery.html",
+						"pageid" : "12495978"
+					},
+					{
+						"subDirName" : "Component",
+						"subDirTarget" : "component.html",
+						"pageid" : "1245ewr78"
+					}
+				]
+			},
+			{
+				"dirName" : "Next Page",
+				"dirtaget" : "mypage.html",
+				"pageid" : "1245etw78",
+				"subDir" : [
+					{
+						"subDirName" : "Share",
+						"subDirTarget" : "share.html",
+						"pageid" : "1245tyt78"
+					},
+					{
+						"subDirName" : "Corroboree",
+						"subDirTarget" : "corroboree.html",
+						"pageid" : "124uy578"
+					},
+					{
+						"subDirName" : "Gallery",
+						"subDirTarget" : "gallery.html",
+						"pageid" : "12489578"
+					}
+				]
+			},
+			{
+				"dirName" : "Last Page",
+				"dirtaget" : "mypage.html",
+				"pageid" : "12457458",
+				"subDir" : [
+					{
+						"subDirName" : "Banner",
+						"subDirTarget" : "banner.html",
+						"pageid" : "12489dsf578"
+					},
+					{
+						"subDirName" : "Compare",
+						"subDirTarget" : "compare.html",
+						"pageid" : "1248957asd8"
+					},
+					{
+						"subDirName" : "Random",
+						"subDirTarget" : "random.html",
+						"pageid" : "12489as578"
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,61 @@
+// ----------------------------------------------------
+// _ad-sub-hero
+// ----------------------------------------------------
+.initial{
+    background:red;
+}
+
+.full-component-placeholder {
+	min-height: 200px;
+}
+
+.contained-component-placeholder {
+	min-height: 200px;
+}
+
+.layout-col-1, .layout-col-2, .layout-col-3, .layout-col-4 {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 16px;
+    padding-right: 16px;
+	min-height: 200px;
+	background: aliceblue;
+    border: 1px solid silver;
+}
+
+.layout-1 {
+    .layout-col-1           { width: 100%;  }
+    .layout-col-2           { width: 100%;  }
+    .layout-col-3           { width: 100%;  }
+    .layout-col-4           { width: 100%; }
+}
+.layout-2 {
+    .layout-col-1           { width: 50%;  }
+    .layout-col-2           { width: 100%;  }
+    .layout-col-3           { width: 100%;  }
+    .layout-col-4           { width: 100%; }
+}
+.layout-3 {
+    .layout-col-1           { width: 33.3333%;  }
+    .layout-col-2           { width: 66.6666%;  }
+    .layout-col-3           { width: 100%;  }
+    .layout-col-4           { width: 100%; }
+}
+
+.layout-4 {
+    .layout-col-1           { width: 25%;  }
+    .layout-col-2           { width: 50%;  }
+    .layout-col-3           { width: 75%;  }
+    .layout-col-4           { width: 100%; }
+}
+
+.main-header {
+	background-color: lightblue;
+	padding: 32px 16px;
+}
+
+.main-footer {
+	background:#2196F3;
+	padding: 32px 16px;
+}

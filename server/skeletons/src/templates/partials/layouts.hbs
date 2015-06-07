@@ -1,0 +1,18 @@
+---
+    component: layouts
+---
+
+<div class="full-component-placeholder"></div>
+{{#each this}}
+<div class="contained-component-placeholder layout-{{layout}}">
+    <div class="container">
+        <div class="row">
+            {{#each columns}}
+                {{#each this}}
+                <div class="layout-col-{{this}}"><div class="row"></div></div>
+                {{/each}}
+            {{/each}}        
+        </div>
+    </div>
+</div>
+{{/each}}

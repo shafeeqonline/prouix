@@ -1,0 +1,1074 @@
+{
+    "home": {
+        "homepage-gallery": "true",
+        "title": false,
+        "stripheadline": "DREAM RIDES:",
+        "isAllEnabled" : true,
+        "isMaintainenceEnabled" : true,
+        "allText" : "ALL",
+        "allTarget" : ".all-rides",
+        "maintenanceText" : "ANIMAL LOVERS",
+        "maintenanceTarget" : ".maintainance",
+        "tabs": [
+            {   
+                "target": ".thrill-rides",
+                "linktext": "THRILL-SEEKERS"
+            },
+            {   "active" : "true",
+            "target": ".family-rides",
+                "linktext": "FAMILY"
+            },
+            {
+                "target": ".kids-rides",
+                "linktext": "KIDS"
+            }
+        ],
+        "stripheadline2": "ALSO SEE:",
+        "stripheadline2url": "#",
+        "stripheadline2linktext": "WHITEWATER WORLD",
+        "galleryitems": [
+            {
+                "active": false,
+                "ridetype": "all-rides",
+                "isMaintainence": true,
+                "images": {
+                    "default": "media/main-rides/dwrides-shockwave.jpg",
+                    "alt": "SHOCKWAVE",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-shockwave.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-shockwave.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "SHOCKWAVE",
+                "captionurl": "#"
+            },
+            {
+                "active": false,
+                "ridetype": "all-rides",
+                "isMaintainence": true,
+                "images": {
+                    "default": "media/main-rides/dwrides-rocky-hollow-log-ride.jpg",
+                    "alt": "Ride Hollow",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-rocky-hollow-log-ride.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-rocky-hollow-log-ride.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Rocky hollow log ride",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "thrill-rides",
+                "active" : true,
+                "isMaintainence": false,
+                "images": {
+                    "default": "media/main-rides/dwrides-thunder-river-rapids.jpg",
+                    "alt": "Thunder River Image",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-thunder-river-rapids.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-thunder-river-rapids.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Thunder River Rapids",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "family-rides",
+                "isMaintainence": false,
+                "images": {
+                    "default": "media/main-rides/dwrides-reef-diver.jpg",
+                    "alt": "Reef Diver Image",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-reef-diver.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-reef-diver.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Reef diver",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "kids-rides",
+                "isMaintainence": true,
+                "images": {
+                    "default": "media/main-rides/dwrides-avis-vintage-cars.jpg",
+                    "alt": "Vintage Cars Image",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-avis-vintage-cars.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-avis-vintage-cars.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Avis vintage cars",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "kids-rides",
+                "isMaintainence": false,
+                "images": {
+                    "default": "media/main-rides/dwrides-dreamworld-express.jpg",
+                    "alt": "Dreamworld Express Image",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-dreamworld-express.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-dreamworld-express.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Dreamworld express",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "kids-rides",
+                "isMaintainence": false,
+                "images": {
+                    "default": "media/main-rides/dwrides-ogre-go-round.jpg",
+                    "alt": "Ogre GO Round Image",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-ogre-go-round.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-ogre-go-round.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Ogre go-round",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "maintenance-rides",
+                "isMaintainence": true,
+                "images": {
+                    "default": "media/main-rides/dwrides-skadoosh-bumper-cars.jpg",
+                    "alt": "Skadoosh Car Image",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-skadoosh-bumper-cars.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-skadoosh-bumper-cars.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Skadoosh bumper cars",
+                "captionurl": "#"
+            }
+        ]
+    },
+    "category": {
+        "title": false,
+        "stripheadline": "DREAMWORLD RIDES:",
+        "tabs": [
+            {
+                "target": ".all-rides",
+                "linktext": "ALL"
+            },
+            {
+                "target": ".thrill-rides",
+                "linktext": "THRILL"
+            },
+            {
+                "active": "true",
+                "target": ".family-rides",
+                "linktext": "FAMILY"
+            },
+            {
+                "target": ".kids-rides",
+                "linktext": "KIDS"
+            },
+            {
+                "target": ".maintenance-rides",
+                "linktext": "MAINTENANCE"
+            }
+        ],
+        "stripheadline2": "ALSO SEE:",
+        "stripheadline2url": "#",
+        "stripheadline2linktext": "WHITEWATER WORLD",
+        "galleryitems": [
+            {
+                "active": "true",
+                "ridetype": "all-rides",
+                "images": {
+                    "default": "media/main-rides/dwrides-shockwave.jpg",
+                    "alt": "SHOCKWAVE",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-shockwave.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-shockwave.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "SHOCKWAVE",
+                "captionurl": "#"
+            },
+            {
+                "active": "true",
+                "ridetype": "all-rides",
+                "images": {
+                    "default": "media/main-rides/dwrides-rocky-hollow-log-ride.jpg",
+                    "alt": "Ride Hollow",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-rocky-hollow-log-ride.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-rocky-hollow-log-ride.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Rocky hollow log ride",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "thrill-rides",
+                "images": {
+                    "default": "media/main-rides/dwrides-thunder-river-rapids.jpg",
+                    "alt": "Thunder River Image",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-thunder-river-rapids.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-thunder-river-rapids.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Thunder River Rapids",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "family-rides",
+                "images": {
+                    "default": "media/main-rides/dwrides-reef-diver.jpg",
+                    "alt": "Reef Diver Image",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-reef-diver.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-reef-diver.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Reef diver",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "kids-rides",
+                "images": {
+                    "default": "media/main-rides/dwrides-avis-vintage-cars.jpg",
+                    "alt": "Vintage Cars Image",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-avis-vintage-cars.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-avis-vintage-cars.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Avis vintage cars",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "kids-rides",
+                "images": {
+                    "default": "media/main-rides/dwrides-dreamworld-express.jpg",
+                    "alt": "Dreamworld Express Image",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-dreamworld-express.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-dreamworld-express.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Dreamworld express",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "kids-rides",
+                "images": {
+                    "default": "media/main-rides/dwrides-ogre-go-round.jpg",
+                    "alt": "Ogre GO Round Image",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-ogre-go-round.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-ogre-go-round.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Ogre go-round",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "maintenance-rides",
+                "images": {
+                    "default": "media/main-rides/dwrides-skadoosh-bumper-cars.jpg",
+                    "alt": "Skadoosh Car Image",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-skadoosh-bumper-cars.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-skadoosh-bumper-cars.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Skadoosh bumper cars",
+                "captionurl": "#"
+            }
+        ]
+
+    },
+    "moreRides": {
+        "title": "MORE RIDES",
+        "stripheadline": "DREAMWORLD RIDES:",
+        "tabs": [
+            {
+                "target": ".all-rides",
+                "linktext": "ALL"
+            },
+            {
+                "active": "true",
+                "target": ".thrill-rides",
+                "linktext": "THRILL"
+            },
+            {
+                "target": ".family-rides",
+                "linktext": "FAMILY"
+            },
+            {
+                "target": ".kids-rides",
+                "linktext": "KIDS"
+            },
+            {
+                "target": ".maintenance-rides",
+                "linktext": "MAINTENANCE"
+            }
+        ],
+        "stripheadline2": "ALSO SEE:",
+        "stripheadline2url": "#",
+        "stripheadline2linktext": "WATERWATER WORLD",
+        "galleryitems": [
+            {
+                "active": "true",
+                "ridetype": "all-rides",
+                "images": {
+                    "default": "media/main-rides/dwrides-shockwave.jpg",
+                    "alt": "SHOCKWAVE",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-shockwave.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-shockwave.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "SHOCKWAVE",
+                "captionurl": "#"
+            },
+            {
+                "active": "true",
+                "ridetype": "all-rides",
+                "images": {
+                    "default": "media/main-rides/dwrides-rocky-hollow-log-ride.jpg",
+                    "alt": "Ride Hollow",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-rocky-hollow-log-ride.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-rocky-hollow-log-ride.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Rocky hollow log ride",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "thrill-rides",
+                "images": {
+                    "default": "media/main-rides/dwrides-thunder-river-rapids.jpg",
+                    "alt": "Thunder River Image",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-thunder-river-rapids.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-thunder-river-rapids.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Thunder River Rapids",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "family-rides",
+                "images": {
+                    "default": "media/main-rides/dwrides-reef-diver.jpg",
+                    "alt": "Reef Diver Image",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-reef-diver.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-reef-diver.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Reef diver",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "kids-rides",
+                "images": {
+                    "default": "media/main-rides/dwrides-avis-vintage-cars.jpg",
+                    "alt": "Vintage Cars Image",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-avis-vintage-cars.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-avis-vintage-cars.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Avis vintage cars",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "kids-rides",
+                "images": {
+                    "default": "media/main-rides/dwrides-dreamworld-express.jpg",
+                    "alt": "Dreamworld Express Image",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-dreamworld-express.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-dreamworld-express.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Dreamworld express",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "kids-rides",
+                "images": {
+                    "default": "media/main-rides/dwrides-ogre-go-round.jpg",
+                    "alt": "Ogre GO Round Image",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-ogre-go-round.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-ogre-go-round.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Ogre go-round",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "maintenance-rides",
+                "images": {
+                    "default": "media/main-rides/dwrides-skadoosh-bumper-cars.jpg",
+                    "alt": "Skadoosh Car Image",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-skadoosh-bumper-cars.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-skadoosh-bumper-cars.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Skadoosh bumper cars",
+                "captionurl": "#"
+            }
+        ]
+    },
+    "moreRidesWater": {
+        "title": "MORE RIDES",
+        "stripheadline": "WATERWORLD RIDES:",
+        "tabs": [
+            {
+                "target": ".all-rides",
+                "linktext": "ALL"
+            },
+            {
+                "active": "true",
+                "target": ".thrill-rides",
+                "linktext": "THRILL"
+            },
+            {
+                "target": ".family-rides",
+                "linktext": "FAMILY"
+            },
+            {
+                "target": ".kids-rides",
+                "linktext": "KIDS"
+            },
+            {
+                "target": ".maintenance-rides",
+                "linktext": "MAINTENANCE"
+            }
+        ],
+        "stripheadline2": "ALSO SEE:",
+        "stripheadline2url": "#",
+        "stripheadline2linktext": "DREAMWATER WORLD",
+        "galleryitems": [
+            {
+                "active": "true",
+                "ridetype": "all-rides",
+                "images": {
+                    "default": "media/waterworld/waterworld-the-wedgie.jpg",
+                    "alt": "The Wedgie",
+                    "sources": [
+                        {
+                            "source": "media/waterworld/waterworld-the-wedgie.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/waterworld/waterworld-the-wedgie.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "THE WEDGIE",
+                "captionurl": "#"
+            },
+            {
+                "active": "true",
+                "ridetype": "all-rides",
+                "images": {
+                    "default": "media/waterworld/waterworld-the-bro.jpg",
+                    "alt": "The Bro",
+                    "sources": [
+                        {
+                            "source": "media/waterworld/waterworld-the-bro.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/waterworld/waterworld-the-bro.jpg"
+                        }
+                    ]
+                },
+                "caption": "THE BRO",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "thrill-rides",
+                "images": {
+                    "default": "media/waterworld/waterworld-the-rip.jpg",
+                    "alt": "The Rip",
+                    "sources": [
+                        {
+                            "source": "media/waterworld/waterworld-the-rip.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/waterworld/waterworld-the-rip.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "THE RIP",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "family-rides",
+                "images": {
+                    "default": "media/waterworld/waterworld-super-tubes-hydrocoaster.jpg",
+                    "alt": "Super Tubes Hydrocoaster",
+                    "sources": [
+                        {
+                            "source": "media/waterworld/waterworld-super-tubes-hydrocoaster.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/waterworld/waterworld-super-tubes-hydrocoaster.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "SUPERTUBER HYDROCOASTER",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "kids-rides",
+                "images": {
+                    "default": "media/waterworld/waterworld-the-green-room.jpg",
+                    "alt": "The Green Room",
+                    "sources": [
+                        {
+                            "source": "media/waterworld/waterworld-the-green-room.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/waterworld/waterworld-the-green-room.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "THE GREEN ROOM",
+                "captionurl": "#"
+            }
+        ]
+    },
+    "maintenance": {
+        "title": "RIDES UNDER MAINTENANCE",
+        "stripheadline": "DREAMWORLD RIDES:",
+        "tabs": [
+            {
+                "target": ".all-rides",
+                "linktext": "ALL"
+            },
+            {
+                "target": ".thrill-rides",
+                "linktext": "THRILL"
+            },
+            {
+                "target": ".family-rides",
+                "linktext": "FAMILY"
+            },
+            {
+                "target": ".kids-rides",
+                "linktext": "KIDS"
+            },
+            {
+                "active": "true",
+                "target": ".maintenance-rides",
+                "linktext": "MAINTENANCE"
+            }
+        ],
+        "stripheadline2": "ALSO SEE:",
+        "stripheadline2url": "#",
+        "stripheadline2linktext": "WATERWATER WORLD",
+        "galleryitems": [
+            {
+                "active": "true",
+                "ridetype": "all-rides",
+                "images": {
+                    "default": "media/main-rides/dwrides-thunder-river-rapids.jpg",
+                    "alt": "SHOCKWAVE",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-thunder-river-rapids.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-thunder-river-rapids.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "SHOCKWAVE",
+                "captionurl": "#"
+            },
+            {
+                "active": "true",
+                "ridetype": "all-rides",
+                "images": {
+                    "default": "media/main-rides/dwrides-ogre-go-round.jpg",
+                    "alt": "Ride Hollow",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-ogre-go-round.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-ogre-go-round.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Rocky hollow log ride",
+                "captionurl": "#"
+            },
+            {
+                "ridetype": "thrill-rides",
+                "images": {
+                    "default": "media/main-rides/dwrides-avis-vintage-cars.jpg",
+                    "alt": "Thunder River Image",
+                    "sources": [
+                        {
+                            "source": "media/main-rides/dwrides-avis-vintage-cars.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/main-rides/dwrides-avis-vintage-cars.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Thunder River Rapids",
+                "captionurl": "#"
+            }
+        ]
+    },
+    "corroboree": {
+        "notabs" : "true",
+        "title": false,
+        "galleryitems": [
+            {
+                "images": {
+                    "default": "media/corroboree/dw-corroboree-koala-country.jpg",
+                    "alt": "Koala Country",
+                    "sources": [
+                        {
+                            "source": "media/corroboree/dw-corroboree-koala-country.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/corroboree/dw-corroboree-koala-country.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "Koala Country",
+                "captionurl": "#"
+            },
+            {
+                "images": {
+                    "default": "media/corroboree/dw-corroboree-croc-feeding.jpg",
+                    "alt": "Crocodile Feeding",
+                    "sources": [
+                        {
+                            "source": "media/corroboree/dw-corroboree-croc-feeding.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/corroboree/dw-corroboree-croc-feeding.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "CROCODILE FEEDING",
+                "captionurl": "#"
+            },
+            {
+                "images": {
+                    "default": "media/corroboree/dw-corroboree-austrailian-sheep-shearing.jpg",
+                    "alt": "AUSTRAILIAN SHEEP SHEARING",
+                    "sources": [
+                        {
+                            "source": "media/corroboree/dw-corroboree-austrailian-sheep-shearing.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/corroboree/dw-corroboree-austrailian-sheep-shearing.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "AUSTRAILIAN SHEEP SHEARING",
+                "captionurl": "#"
+            },
+            {
+                "images": {
+                    "default": "media/corroboree/dw-corroboree-daintree-forest.jpg",
+                    "alt": "DAINTREE FOREST",
+                    "sources": [
+                        {
+                            "source": "media/corroboree/dw-corroboree-daintree-forest.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/corroboree/dw-corroboree-daintree-forest.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "DAINTREE FOREST",
+                "captionurl": "#"
+            },
+            {
+                "images": {
+                    "default": "media/corroboree/dw-corroboree-kakadu-wetlands.jpg",
+                    "alt": "KAKADU WETLANDS",
+                    "sources": [
+                        {
+                            "source": "media/corroboree/dw-corroboree-kakadu-wetlands.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/corroboree/dw-corroboree-kakadu-wetlands.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "KAKADU WETLANDS",
+                "captionurl": "#"
+            },
+            {
+                "images": {
+                    "default": "media/corroboree/dw-corroboree-sunset-safari.jpg",
+                    "alt": "SUNSET SAFARI",
+                    "sources": [
+                        {
+                            "source": "media/corroboree/dw-corroboree-sunset-safari.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/corroboree/dw-corroboree-sunset-safari.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "SUNSET SAFARI",
+                "captionurl": "#"
+            },
+            {
+                "images": {
+                    "default": "media/corroboree/dw-corroboree-cultural-weapons-demonstration.jpg",
+                    "alt": "CULTURAL WEAPONS DEMONSTRATION",
+                    "sources": [
+                        {
+                            "source": "media/corroboree/dw-corroboree-cultural-weapons-demonstration.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/corroboree/dw-corroboree-cultural-weapons-demonstration.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "CULTURAL WEAPONS DEMONSTRATION",
+                "captionurl": "#"
+            },
+            {
+                "images": {
+                    "default": "media/corroboree/dw-corroboree-face-painting-yarning-circle.jpg",
+                    "alt": "FACE PAINTING AND YARNING CIRCLE",
+                    "sources": [
+                        {
+                            "source": "media/corroboree/dw-corroboree-face-painting-yarning-circle.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/corroboree/dw-corroboree-face-painting-yarning-circle.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "FACE PAINTING AND YARNING CIRCLE",
+                "captionurl": "#"
+            },
+            {
+                "images": {
+                    "default": "media/corroboree/dw-corroboree-traditional-music-and-fire-making.jpg",
+                    "alt": "TRADITIONAL MUSIC AND FIRE MAKING",
+                    "sources": [
+                        {
+                            "source": "media/corroboree/dw-corroboree-traditional-music-and-fire-making.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/corroboree/dw-corroboree-traditional-music-and-fire-making.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "TRADITIONAL MUSIC AND FIRE MAKING",
+                "captionurl": "#"
+            }
+        ]
+    },
+    "tiger": {
+        "notabs" : true,
+        "title": false,
+        "galleryitems": [
+            {
+                "images": {
+                    "default": "media/tigers/dw-subbrand-tigers-dreamworld.jpg",
+                    "alt": "TIGERS DREAMWORLD",
+                    "sources": [
+                        {
+                            "source": "media/tigers/dw-subbrand-tigers-dreamworld.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/tigers/dw-subbrand-tigers-dreamworld.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "TIGERS DREAMWORLD",
+                "captionurl": "#"
+            },
+            {
+                "images": {
+                    "default": "media/tigers/dw-subbrand-tiger-shows.jpg",
+                    "alt": "TIGER SHOWS",
+                    "sources": [
+                        {
+                            "source": "media/tigers/dw-subbrand-tiger-shows.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/tigers/dw-subbrand-tiger-shows.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "TIGER SHOWS",
+                "captionurl": "#"
+            },
+            {
+                "images": {
+                    "default": "media/tigers/dw-subbrand-cub-college.jpg",
+                    "alt": "CUB COLLEGE",
+                    "sources": [
+                        {
+                            "source": "media/tigers/dw-subbrand-cub-college.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/tigers/dw-subbrand-cub-college.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "CUB COLLEGE",
+                "captionurl": "#"
+            },
+            {
+                "images": {
+                    "default": "media/tigers/dw-subbrand-helping-save-the-tigers.jpg",
+                    "alt": "HELPING SAVE THE TIGERS",
+                    "sources": [
+                        {
+                            "source": "media/tigers/dw-subbrand-helping-save-the-tigers.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/tigers/dw-subbrand-helping-save-the-tigers.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "HELPING SAVE THE TIGERS",
+                "captionurl": "#"
+            },
+            {
+                "images": {
+                    "default": "media/tigers/dw-subbrand-tiger-feeding-experience.jpg",
+                    "alt": "TIGER FEEDING EXPERIENCE",
+                    "sources": [
+                        {
+                            "source": "media/tigers/dw-subbrand-tiger-feeding-experience.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/tigers/dw-subbrand-tiger-feeding-experience.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "TIGER FEEDING EXPERIENCE",
+                "captionurl": "#"
+            },
+            {
+                "images": {
+                    "default": "media/tigers/dw-subbrand-tiger-walks.jpg",
+                    "alt": "TIGER WALKS",
+                    "sources": [
+                        {
+                            "source": "media/tigers/dw-subbrand-tiger-walks.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/tigers/dw-subbrand-tiger-walks.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "TIGER WALKS",
+                "captionurl": "#"
+            },
+            {
+                "images": {
+                    "default": "media/tigers/dw-subbrand-tiger-photos.jpg",
+                    "alt": "TIGER PHOTOS",
+                    "sources": [
+                        {
+                            "source": "media/tigers/dw-subbrand-tiger-photos.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/tigers/dw-subbrand-tiger-photos.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "TIGER PHOTOS",
+                "captionurl": "#"
+            },
+            {
+                "images": {
+                    "default": "media/tigers/dw-subbrand-tiger-island-news.jpg",
+                    "alt": "TIGER ISLAND NEWS",
+                    "sources": [
+                        {
+                            "source": "media/tigers/dw-subbrand-tiger-island-news.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/tigers/dw-subbrand-tiger-island-news.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "TIGER ISLAND NEWS",
+                "captionurl": "#"
+            },
+            {
+                "images": {
+                    "default": "media/tigers/dw-subbrand-nika-dreamworld-new-tigress.jpg",
+                    "alt": "NIKA-DREAMWORLD'S NEW TIGRESS",
+                    "sources": [
+                        {
+                            "source": "media/tigers/dw-subbrand-nika-dreamworld-new-tigress.jpg",
+                            "minWidth": "100px"
+                        },
+                        {
+                            "source": "media/tigers/dw-subbrand-nika-dreamworld-new-tigress.jpg?w=640"
+                        }
+                    ]
+                },
+                "caption": "NIKA-DREAMWORLD'S NEW TIGRESS",
+                "captionurl": "#"
+            }
+        ]
+    }
+}
