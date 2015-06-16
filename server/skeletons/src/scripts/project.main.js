@@ -3,19 +3,23 @@
 	//==================================================
     // DOCUMENT READY & BootStraping init method for all modules loaded in the page...
     //--------------------------------------------------
-    $(function() {
-		var globalComponents = ['Configs','Utils','Header'];
-		for(var components in globalComponents){
-			AD[globalComponents[components]].init();
+    $(function () {
+        var components, data, globalComponents = ['Configs', 'Utils', 'Header'];
+        for (components in globalComponents) {
+            data = globalComponents[components];
+            console.log("UTILITY : %s", data);
+            if (AD[data]) {
+                AD[data].init();
+            }
 		}
 		//Page Specific components
-		for(var components in AD.initUI){
-			AD[AD.initUI[components].module].init(AD.initUI[components].selector);
+        console.log("MODULES : %s", JSON.stringify(AD.initUI));
+        for (components in AD.initUI) {
+            data = AD.initUI[components];
+            if (AD[data.module]) {
+                AD[data.module].init(data.selector);
+            }			
 		}
-        
-        $(".ad-discover-more").on('click', function(){
-            $("html, body").animate({"scrollTop" : $(".ad-discover-more").offset().top});
-        });
     }());
     //--------------------------------------------------
     // end DOCUMENT READY...

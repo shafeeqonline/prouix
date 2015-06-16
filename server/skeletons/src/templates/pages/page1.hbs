@@ -1,0 +1,36 @@
+---
+title: DreamWorld Pages
+heading: Three column layout
+layout: T01.hbs
+---
+<div class="page-content my-theme">
+    <div class="full-component-placeholder">
+        {{>carousel images}}
+    </div>
+    <div class="contained-component-placeholder card-container layout-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="row">                            
+                        {{>bookmarks bookmarks}}
+                    </div>                        
+                </div>
+                <div class="col-sm-8">
+                    <div class="row">
+                        {{>spotlight cards.card3}}
+                        {{>spotlight cards.card3}}
+                        {{>spotlight cards.card4}}
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="row">
+                        {{>spotlight cards.card1}}
+                        {{>spotlight cards.card2}}
+                        {{>spotlight cards.card1}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+

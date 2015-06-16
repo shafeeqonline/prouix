@@ -1,5 +1,15 @@
 <header>
 	<div class="main-header">
-		This is general header
+        <div class="page-list">
+            <div class="container">
+                <div class="row">
+                    <ul>
+                        {{#each pages}} 
+                        <li ><a href ="/{{basename}}.html" >{{data.heading}}</a ></li > 
+                        {{/each}}
+                    </ul >
+                </div>
+            </div>
+        </div>
 	</div>
 </header>

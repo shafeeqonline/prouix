@@ -1,0 +1,25 @@
+---
+component: carousel
+---
+<div class="hero-carousel slider" id="hero-carousel-main">
+    {{#each this}}
+        <div class="slide">
+            <div class="bg">
+                <div class="image-responsive">
+                    {{>picture this}}
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="title">
+                        <h2>{{title}}</h2>
+                        <span class="description">{{description}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>
+<script type="text/javascript">
+    AD.initUI.push({"module":"Carousel", "selector":"#hero-carousel-main"});
+</script>

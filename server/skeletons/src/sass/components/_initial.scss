@@ -1,61 +1,99 @@
-// ----------------------------------------------------
-// _ad-sub-hero
-// ----------------------------------------------------
-.initial{
-    background:red;
-}
-
-.full-component-placeholder {
-	min-height: 200px;
-}
-
-.contained-component-placeholder {
-	min-height: 200px;
-}
-
-.layout-col-1, .layout-col-2, .layout-col-3, .layout-col-4 {
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-left: 16px;
-    padding-right: 16px;
-	min-height: 200px;
-	background: aliceblue;
-    border: 1px solid silver;
-}
-
-.layout-1 {
-    .layout-col-1           { width: 100%;  }
-    .layout-col-2           { width: 100%;  }
-    .layout-col-3           { width: 100%;  }
-    .layout-col-4           { width: 100%; }
-}
-.layout-2 {
-    .layout-col-1           { width: 50%;  }
-    .layout-col-2           { width: 100%;  }
-    .layout-col-3           { width: 100%;  }
-    .layout-col-4           { width: 100%; }
-}
-.layout-3 {
-    .layout-col-1           { width: 33.3333%;  }
-    .layout-col-2           { width: 66.6666%;  }
-    .layout-col-3           { width: 100%;  }
-    .layout-col-4           { width: 100%; }
-}
-
-.layout-4 {
-    .layout-col-1           { width: 25%;  }
-    .layout-col-2           { width: 50%;  }
-    .layout-col-3           { width: 75%;  }
-    .layout-col-4           { width: 100%; }
-}
-
 .main-header {
-	background-color: lightblue;
-	padding: 32px 16px;
+	padding: 15px 0;
 }
 
 .main-footer {
-	background:#2196F3;
-	padding: 32px 16px;
+	padding: 15px 0;
 }
+
+/****************** COMPONENTS **********************/
+
+.page-list ul {
+    list-style: outside none none;
+    padding-left: 0px;
+}
+
+.page-list ul li {
+    border: 1px solid aliceblue;
+    background: #EEEEEE;    
+    display: inline-block;
+}
+
+.page-list ul li a {
+    display: block;
+    padding: 4px 8px; 
+}
+
+.hero-carousel .bg {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.hero-carousel .slide {
+    height: 400px;
+}
+
+.hero-carousel .title {
+    display: block;
+    width: 100%;
+    background: white;
+    opacity: 0.4;
+    padding: 15px;
+    height: 400px;
+}
+
+.hero-carousel .title h2 {
+    display: block;
+    margin: 0px;
+}
+
+.image-responsive {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.image-responsive img {
+    width: 100%;
+}
+
+.bookmarks-menu ul {
+    padding-left: 0px;
+}
+
+.bookmarks-menu ul li {
+    display: block;
+    list-style: none;
+}
+
+.bookmarks-menu ul li a {
+    display: block;
+    padding: 8px 16px;
+}
+
+.bookmarks-menu ul li a:hover {
+    background-color: $color-primary-light;
+}
+
+
+/* Inheriting styles as themes provided by prouix */
+.my-theme { @extend .pro-theme; }
+
+.slick-slider.hero-carousel .slide {
+    position: relative;
+}
+
+.slick-slider.hero-carousel .slick-prev {
+    left: 25px;
+}
+
+.slick-slider.hero-carousel .slick-next {
+    right: 25px;
+}
+
+.slick-slider.hero-carousel .slick-dots {
+    bottom: -30px;
+}
+
+/****************** COMPONENTS **********************/

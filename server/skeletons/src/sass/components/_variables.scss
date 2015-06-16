@@ -1,0 +1,223 @@
+$media-phone: 480px !default;
+$bg-component: #607D8B;
+$bg-component-alternate: #8BC34A;
+
+$color-primary: #3F51B5;
+$color-primary-light: #C5CAE9;
+$color-primary-dark: #303F9F;
+
+$color-secondary: #FF4081;
+$color-secondary-light: #FF80AB;
+$color-secondary-dark: #F50057;
+$color-secondary-fallback: #FFFFFF;
+
+$text-color-dark: #333333;
+$text-color-dark-secondary: #666666;
+$text-color-dark-disabled: #BDBDBD;
+$text-color-dark-dividers: #E1E1E1;
+
+$text-color-light: #CCCCCC;
+$text-color-light-secondary: #888888;
+$text-color-light-disabled: #424242;
+$text-color-light-dividers: #1E1E1E;
+
+.pro-theme {
+    color: $text-color-dark;
+    .component {
+        padding: 0px;
+        .component-content {
+            padding: 15px;
+            display: block;
+            height: 100%;
+            background-color: $color-primary;
+            color: $text-color-light;
+            a{
+                color: $color-secondary-light;
+                &:hover{
+                    color: $color-secondary;
+                }
+            }
+        }        
+        &:nth-child(2n) .component-content {
+            background-color: $color-primary-light;
+            color: $text-color-dark;
+            a{
+                color: $color-secondary-dark;
+                &:hover{
+                    color: $color-secondary;
+                }
+            }
+        }
+        h3 {
+            margin-top: 0px;
+        }
+    }
+    .card-container {
+        padding-top: 15px;
+        .component {
+            padding: 0px 15px 15px 0px;
+        }
+        &>.container {
+            padding-right: 0px;
+        }
+    }
+    a{
+        color: $color-secondary;
+        &:hover{
+            color: $color-secondary-light;
+        }
+    }
+}
+
+//List of all z-indexes
+$zindex-list: (
+    z0: 0,
+    z1: 100,
+    z2: 200,
+    z3: 300,
+    z4: 400,
+    z5: 500,
+    default: auto
+);
+
+/*All colors will come here */
+$color-list: (
+    white: #fff,
+    bluePageBg: #00265b,
+    blueBorder: #19446f,
+    whiteBorder: #8093ad,
+    blueLinkActive: #00265b,
+    lightBlueLinkHover:#25e6fd
+);
+
+@function get-zindex($key) {
+    @if map-has-key($zindex-list, $key) {
+        @return map-get($zindex-list, $key);
+    }
+    @else {
+        @return auto;
+    }
+}
+
+@function get-color($key) {
+    @if map-has-key($color-list, $key) {
+        @return map-get($color-list, $key);
+    }
+    @else {
+        @return #000000;
+    }
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+// define variables for spacings
+// ==========================================================================
+$max-width: 100% !global;
+
+$gutterside:15px;
+$mobilegutter: 8px;
+
+$max-width: 980px;
+$min-width: 320px;
+
+// define breakpoints
+// ==========================================================================
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+@mixin mobile {
+  @media (max-width: #{$tablet-width -1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+/* To use media queries we just have to say @include tablet{font-size:14px} */
+
+//includes fonts sass from the fonts folder and then we assign them to variables
+//Fonts
+$font-primary: 'Arial';
+$font-project: 'San-serif';
+$font-oswald-bold: 'Oswald';
+$font-random: 'Random';
+//Standard fonts like these will be added for generalisation
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+
+
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+// Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-universl-roman !default; 
+
+$font-size-base:          15px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+
+// Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.35 !default; // 20/14
+// Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+// By default, this inherits from the `<body>`.
+$headings-font-family:    inherit !default;
+$headings-font-weight:    500 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          inherit !default;
+
+/*Button colurs used across site can be defined*/
+$btn-default-color:              #333 !default;
+$btn-default-bg:                 #fff !default;
+$btn-default-border:             #ccc !default;
+
+//-- Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+//
+// Note: These variables are not generated into the Customizer.
+
+$zindex-navbar:            1000 !default;
+$zindex-dropdown:          1000 !default;
+$zindex-popover:           1060 !default;
+$zindex-tooltip:           1070 !default;
+$zindex-navbar-fixed:      1030 !default;
+$zindex-modal-background:  1040 !default;
+$zindex-modal:             1050 !default;
+
+//Setting container width to all view ports if required
+$container-tablet: 700px;
+$container-tablet: 980px;
+$container-tablet: 400px;

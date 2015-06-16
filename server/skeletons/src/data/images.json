@@ -1,0 +1,29 @@
+{
+    "image1":
+    {
+        "small": "http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/Beautiful-Wallpapers-14.jpg",
+        "medium": "http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/Beautiful-Wallpapers-14.jpg",
+        "large": "http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/Beautiful-Wallpapers-14.jpg",
+        "title":"First image",
+		"description": "This is me",
+        "alt": "This is me"
+	},
+    "image2":
+    {
+        "small": "http://cdn.wonderfulengineering.com/wp-content/uploads/2014/09/new-wallpaper-16.jpg",
+        "medium": "http://cdn.wonderfulengineering.com/wp-content/uploads/2014/09/new-wallpaper-16.jpg",
+        "large": "http://cdn.wonderfulengineering.com/wp-content/uploads/2014/09/new-wallpaper-16.jpg",
+        "title":"Second image",
+        "description": "This is me.",
+        "alt": "This is me"
+    },
+    "image3":
+    {
+        "small": "http://images7.alphacoders.com/376/376333.jpg",
+        "medium": "http://images7.alphacoders.com/376/376333.jpg",
+        "large": "http://images7.alphacoders.com/376/376333.jpg",
+        "title":"Third image",
+        "description": "This is me.",
+        "alt": "This is me"
+    }
+}
