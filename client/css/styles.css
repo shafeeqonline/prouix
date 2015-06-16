@@ -7,14 +7,24 @@ div{
 }
 .predefined input[name='version']{
 	float: right;
-	margin-right:50%;
 }
 input{
-	margin:0 15px;
-	margin-left: 0;
-	padding-left: 15px;
+	margin-right:20px;
+	padding-left: 5px;
 }
 h3{
 	margin-top: 50px; 
 }
-
+h2{
+	padding-top: 30px;
+}
+.btn-success{
+	width:100%;
+	margin:50px;
+}
+input[type="text"]{
+	width:60%;
+}
+#successmsg{
+	display:none;
+}

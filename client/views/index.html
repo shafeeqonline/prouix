@@ -12,11 +12,27 @@
    <form id="package">
     <div> Project name <input type="text" required placeholder="Your project folder name" name="projectname"></div>
       <div> CSS namespace <input type="text" required placeholder="Classes get this prepended" name="cssname"></div>
-    <div class="predefined"><input type="checkbox" name="jQuery"> JQuery <input type="text" placeholder="Version" name="version"></div>
-     <div class="predefined"><input type="checkbox" name="Backbone"> Backbone <input type="text" name="version" placeholder="Version"></div>
-      <div class="predefined"><input type="checkbox" name="Angular"> Angular <input type="text" name="version" placeholder="Version"></div>
-    <input type="submit" value="Submit"><button type="button" class="addmore">Add new</button>
+      <div id="packagejson">
+        <h2>Dependencied required for package JSON</h2>
+          <div class="predefined"><input type="checkbox" name="assemble"> assemble <input type="text" placeholder="Version" name="version"></div>
+       <div class="predefined"><input type="checkbox" name="grunt-watch"> Grunt Watch <input type="text" name="version" placeholder="Version"></div>
+        <div class="predefined"><input type="checkbox" name="Grunt-reload"> Grunt Reload <input type="text" name="version" placeholder="Version"></div>
+        <button type="button" class="addmore btn btn-primary">Add new</button>
+      </div>
+      <div id="bowerjson">
+        <h2>Dependencied required for bower JSON</h2>
+        <div class="predefined"><input type="checkbox" name="jQuery"> JQuery <input type="text" placeholder="Version" name="version"></div>
+       <div class="predefined"><input type="checkbox" name="slick"> Slick <input type="text" name="version" placeholder="Version"></div>
+        <div class="predefined"><input type="checkbox" name="parallax"> parallax <input type="text" name="version" placeholder="Version"></div>
+        <button type="button" class="addmore btn btn-primary">Add new</button>
+      </div>
+    
+    <input type="submit" value="Generate my project files" class=" btn btn-success">
   </form>
+  <div id="successmsg">
+      <h3>Congratulations your project Code base is ready in the folder</h3>
+      <h3>Good luck with your project :)</h3>
+  </div>
   </div>
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/scripts.js"></script>

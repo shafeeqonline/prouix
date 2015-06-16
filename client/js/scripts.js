@@ -4,31 +4,48 @@
 
   $('form#package .addmore').on('click', function(){
   	var dupbox = newbox.clone();
-  	dupbox.insertAfter($('form#package div:last'))
+  	dupbox.insertBefore($(this))
 })
 
 $('form#package').on('submit', function(e){
 	e.preventDefault();
-	var packagedata = {}, dataToSend = {};
+	var packagedata = {}, dataToSend = {}, bowerdata = {};
+
+	$('#package').hide();
+	$('#successmsg').show();
+	$('#successmsg h3:first-child').text($('#successmsg h3:first-child').text() + ' ' + $(this).find('input[name="projectname"]').val())
 
 	dataToSend.projectname = $(this).find('input[name="projectname"]').val();
-	console.log($(this).find('input[name="projectname"]').val())
 	dataToSend.cssname = $(this).find('input[name="cssname"]').val();
-	console.log(packagedata)
-	$(this).find('.predefined input:checkbox').each(function(i, v){
+	$(this).find('#packagejson .predefined input:checkbox').each(function(i, v){
 		if($(v).prop('checked')){
 			var version = $(v).parent().find('input:text').val();
 			version = version || "latest";
 			packagedata[$(v).attr('name').toLowerCase()] = version;
 		}
 	})
-	$('.newpackages').each(function(i, v){
+	$('#packagejson .newpackages').each(function(i, v){
 		var version = $(v).find("input[name='version']").val();
 		version = version || "latest";
 		packagedata[$(v).find("input[name='package']").val().toLowerCase()] = version;
 	})
-
 	dataToSend['packagedata'] = packagedata ;
+
+	$(this).find('#bowerjson .predefined input:checkbox').each(function(i, v){
+		if($(v).prop('checked')){
+			var version = $(v).parent().find('input:text').val();
+			version = version || "latest";
+			bowerdata[$(v).attr('name').toLowerCase()] = version;
+		}
+	})
+	$('#bowerjson .newpackages').each(function(i, v){
+		var version = $(v).find("input[name='version']").val();
+		version = version || "latest";
+		bowerdata[$(v).find("input[name='package']").val().toLowerCase()] = version;
+	})
+	dataToSend['bowerdata'] = bowerdata ;
+
+	console.log(dataToSend)
 
 	$.ajax({
 	  type: "POST",
