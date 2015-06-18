@@ -32,6 +32,9 @@
 
 .hero-carousel .slide {
     height: 400px;
+    @include mobile {
+        height: auto;
+    }
 }
 
 .hero-carousel .title {

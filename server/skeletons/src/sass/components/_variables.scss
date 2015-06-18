@@ -1,4 +1,3 @@
-$media-phone: 480px !default;
 $bg-component: #607D8B;
 $bg-component-alternate: #8BC34A;
 
@@ -21,53 +20,7 @@ $text-color-light-secondary: #888888;
 $text-color-light-disabled: #424242;
 $text-color-light-dividers: #1E1E1E;
 
-.pro-theme {
-    color: $text-color-dark;
-    .component {
-        padding: 0px;
-        .component-content {
-            padding: 15px;
-            display: block;
-            height: 100%;
-            background-color: $color-primary;
-            color: $text-color-light;
-            a{
-                color: $color-secondary-light;
-                &:hover{
-                    color: $color-secondary;
-                }
-            }
-        }        
-        &:nth-child(2n) .component-content {
-            background-color: $color-primary-light;
-            color: $text-color-dark;
-            a{
-                color: $color-secondary-dark;
-                &:hover{
-                    color: $color-secondary;
-                }
-            }
-        }
-        h3 {
-            margin-top: 0px;
-        }
-    }
-    .card-container {
-        padding-top: 15px;
-        .component {
-            padding: 0px 15px 15px 0px;
-        }
-        &>.container {
-            padding-right: 0px;
-        }
-    }
-    a{
-        color: $color-secondary;
-        &:hover{
-            color: $color-secondary-light;
-        }
-    }
-}
+//Shafeeq added
 
 //List of all z-indexes
 $zindex-list: (
@@ -77,17 +30,20 @@ $zindex-list: (
     z3: 300,
     z4: 400,
     z5: 500,
-    default: auto
+    default: auto,
 );
 
 /*All colors will come here */
 $color-list: (
-    white: #fff,
-    bluePageBg: #00265b,
-    blueBorder: #19446f,
-    whiteBorder: #8093ad,
-    blueLinkActive: #00265b,
-    lightBlueLinkHover:#25e6fd
+    white: $text-color-light,
+    page-bg: $color-primary,
+    border: $color-primary,
+    border-light: $color-primary-light,
+    link-active: $color-secondary,
+    link-hover:$color-secondary-light,
+    button-bg: $color-secondary,
+    button-border: $color-secondary-light,
+    button-text: $text-color-light
 );
 
 @function get-zindex($key) {
@@ -113,11 +69,57 @@ $color-list: (
   $opacity-ie: $opacity * 100;
   filter: alpha(opacity=$opacity-ie); //IE8
 }
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
           border-radius: $radius;
+}
+
+@mixin abs-pos ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+}
+
+/* 
+* @include triangle within a pseudo element and add positioning properties (ie. top, left)
+* $direction: up, down, left, right
+*/
+@mixin triangle($direction, $size: 6px, $color: $color-primary){
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0; width: 0;
+    @if ($direction == 'up'){
+        border-bottom: $size solid $color;
+        border-left: 1/2*$size solid transparent;
+        border-right: 1/2*$size solid transparent;
+    }
+    @else if ($direction == 'down'){
+        border-top: $size solid $color;
+        border-left: 1/2*$size solid transparent;
+        border-right: 1/2*$size solid transparent;
+    }
+    @else if ($direction == 'left'){
+        border-top: 1/2*$size solid transparent;
+        border-bottom: 1/2*$size solid transparent;
+        border-right: $size solid $color;
+    }
+    @else if ($direction == 'right'){
+        border-top: 1/2*$size solid transparent;
+        border-bottom: 1/2*$size solid transparent;
+        border-left: $size solid $color;
+    }
+}
+
+@mixin truncate-text($overflow: ellipsis){
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: $overflow; // values are: clip, ellipsis, or a string
 }
 
 // define variables for spacings
@@ -134,7 +136,7 @@ $min-width: 320px;
 // ==========================================================================
 
 $tablet-width: 768px;
-$desktop-width: 1200px;
+$desktop-width: 1024px;
 
 @mixin mobile {
   @media (max-width: #{$tablet-width -1px}) {
@@ -153,8 +155,38 @@ $desktop-width: 1200px;
     @content;
   }
 }
-
 /* To use media queries we just have to say @include tablet{font-size:14px} */
+
+/*******************ANIMATION MIXIN****************************/
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+/*******************ANIMATION MIXIN****************************/
+/*******************TRANSITION MIXIN****************************/
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+/*******************TRANSITION MIXIN****************************/
+
+%visuallyhidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
 
 //includes fonts sass from the fonts folder and then we assign them to variables
 //Fonts
@@ -198,9 +230,9 @@ $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
 
 /*Button colurs used across site can be defined*/
-$btn-default-color:              #333 !default;
+/*$btn-default-color:              #333 !default;
 $btn-default-bg:                 #fff !default;
-$btn-default-border:             #ccc !default;
+$btn-default-border:             #ccc !default;*/
 
 //-- Z-index master list
 //
@@ -219,5 +251,53 @@ $zindex-modal:             1050 !default;
 
 //Setting container width to all view ports if required
 $container-tablet: 700px;
-$container-tablet: 980px;
-$container-tablet: 400px;
+$container-desktop: 980px;
+$container-mobile: 400px;
+
+.pro-theme {
+    color: $text-color-dark;
+    .component {
+        padding: 0px;
+        .component-content {
+            padding: $gutterside;
+            display: block;
+            height: 100%;
+            background-color: $color-primary;
+            color: $text-color-light;
+            a{
+                color: $color-secondary-light;
+                &:hover{
+                    color: $color-secondary;
+                }
+            }
+        }        
+        &:nth-child(2n) .component-content {
+            background-color: $color-primary-light;
+            color: $text-color-dark;
+            a{
+                color: $color-secondary-dark;
+                &:hover{
+                    color: $color-secondary;
+                }
+            }
+        }
+        h3 {
+            margin-top: 0px;
+        }
+    }
+    .card-container {
+        padding-top: 15px;
+        .component {
+            padding: 0px 15px 15px 0px;
+        }
+        &>.container {
+            padding-right: 0px;
+        }
+    }
+    a{
+        color: $color-secondary;
+        &:hover{
+            color: $color-secondary-light;
+        }
+    }
+}

@@ -7,7 +7,55 @@ ul, ol {
     margin-top: 0;
 }
 
-.layout-col-1, .layout-col-2, .layout-col-3, .layout-col-4 {
+.pro-theme {
+    color: $text-color-dark;
+    .component {
+        padding: 0px;
+        .component-content {
+            padding: 15px;
+            display: block;
+            height: 100%;
+            background-color: $color-primary;
+            color: $text-color-light;
+            a{
+                color: $color-secondary-light;
+                &:hover{
+                    color: $color-secondary;
+                }
+            }
+        }        
+        /*&:nth-child(2n) .component-content {
+            background-color: $color-primary-light;
+            color: $text-color-dark;
+            a{
+                color: $color-secondary-dark;
+                &:hover{
+                    color: $color-secondary;
+                }
+            }
+        }*/
+        h3 {
+            margin-top: 0px;
+        }
+    }
+    .card-container {
+        padding-top: 15px;
+        .component {
+            padding: 0px 15px 15px 0px;
+        }
+        &>.container {
+            padding-right: 0px;
+        }
+    }
+    a{
+        color: $color-secondary;
+        &:hover{
+            color: $color-secondary-light;
+        }
+    }
+}
+
+.nmspc-layout-col-1, .nmspc-layout-col-2, .nmspc-layout-col-3, .nmspc-layout-col-4 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -15,75 +63,75 @@ ul, ol {
     padding-right: 15px;
 }
 
-.layout-col-1           { float: left; width: 25%;  }
-.layout-col-2           { float: left; width: 50%;  }
-.layout-col-3           { float: left; width: 75%;  }
-.layout-col-4           { float: left; width: 100%; }
+.nmspc-layout-col-1           { float: left; width: 25%;  }
+.nmspc-layout-col-2           { float: left; width: 50%;  }
+.nmspc-layout-col-3           { float: left; width: 75%;  }
+.nmspc-layout-col-4           { float: left; width: 100%; }
 
-.layout-3 {
+.nmspc-layout-3 {
     .col-sm-4 {
-        .layout-col-1   { width: 100%; }
-        .layout-col-2   { width: 100%; }
-        .layout-col-3   { width: 100%; }
-        .layout-col-4   { width: 100%; }
+        .nmspc-layout-col-1   { width: 100%; }
+        .nmspc-layout-col-2   { width: 100%; }
+        .nmspc-layout-col-3   { width: 100%; }
+        .nmspc-layout-col-4   { width: 100%; }
     }
     .col-sm-8 {
-        .layout-col-1   { width: 50%;  }
-        .layout-col-2   { width: 100%; }
-        .layout-col-3   { width: 100%; }
-        .layout-col-4   { width: 100%; }
+        .nmspc-layout-col-1   { width: 50%;  }
+        .nmspc-layout-col-2   { width: 100%; }
+        .nmspc-layout-col-3   { width: 100%; }
+        .nmspc-layout-col-4   { width: 100%; }
     }
     .col-sm-12 {
-        .layout-col-1   { width: 33.3333%; }
-        .layout-col-2   { width: 66.6667%; }
-        .layout-col-3   { width: 100%; }
-        .layout-col-4   { width: 100%; }
+        .nmspc-layout-col-1   { width: 33.3333%; }
+        .nmspc-layout-col-2   { width: 66.6667%; }
+        .nmspc-layout-col-3   { width: 100%; }
+        .nmspc-layout-col-4   { width: 100%; }
     }
 
 }
 
-.layout-4 {
+.nmspc-layout-4 {
     // 1 Column : Left and Right Rail
     .col-sm-3 {
-        .layout-col-1           { width: 100%; }
-        .layout-col-2           { width: 100%; }
-        .layout-col-3           { width: 100%; }
-        .layout-col-4           { width: 100%; }
+        .nmspc-layout-col-1           { width: 100%; }
+        .nmspc-layout-col-2           { width: 100%; }
+        .nmspc-layout-col-3           { width: 100%; }
+        .nmspc-layout-col-4           { width: 100%; }
     }
 
     // 2 Column : Main Content (3 column template)
     .col-sm-6 {
-        .layout-col-1           { width: 50%;  }
-        .layout-col-2           { width: 100%; }
-        .layout-col-3           { width: 100%; }
-        .layout-col-4           { width: 100%; }
+        .nmspc-layout-col-1           { width: 50%;  }
+        .nmspc-layout-col-2           { width: 100%; }
+        .nmspc-layout-col-3           { width: 100%; }
+        .nmspc-layout-col-4           { width: 100%; }
     }
 
     // 3 Column : Main Content (2 column template)
     .col-sm-9 {
-        .layout-col-1           { width: 33.3333%; }
-        .layout-col-2           { width: 66.6667%; }
-        .layout-col-3           { width: 100%; }
-        .layout-col-4           { width: 100%; }
+        .nmspc-layout-col-1           { width: 33.3333%; }
+        .nmspc-layout-col-2           { width: 66.6667%; }
+        .nmspc-layout-col-3           { width: 100%; }
+        .nmspc-layout-col-4           { width: 100%; }
     }
 }
 
 @mixin resetColumns {
-    .layout-col-1, .layout-col-2, .layout-col-3, .layout-col-4 {
+    .nmspc-layout-col-1, .nmspc-layout-col-2, .nmspc-layout-col-3, .nmspc-layout-col-4 {
         float: none; width: auto;
     }
 }
 
-@media (max-width: $media-phone) {
+@include mobile {
     @include resetColumns;
 
-    .layout-3 {
+    .nmspc-layout-3 {
         .col-sm-4, .col-sm-8, .col-sm-12 {
             @include resetColumns;
         }
     }
 
-    .layout-3 {
+    .nmspc-layout-3 {
         // 1 Column : Left and Right Rail
         .col-sm-3, .col-sm-6, .col-sm-9 {
             @include resetColumns;
