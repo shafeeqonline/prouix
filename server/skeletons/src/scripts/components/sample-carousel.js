@@ -1,5 +1,5 @@
-(function (AD, $) {
-	 AD.Carousel = (function () {
+(function (fnlprjt, $) {
+	 fnlprjt.Carousel = (function () {
 		function _carousel() {
             this.initCarousel = function(selector) {
                 console.log("CAROUSEL");
@@ -18,7 +18,7 @@
                     slidesToScroll: 4,
                     responsive: [
                         {
-                          breakpoint: AD.Configs.views.medium,
+                          breakpoint: fnlprjt.Configs.views.medium,
                           settings: {
                             slidesToShow: 3,
                             slidesToScroll: 3,
@@ -27,14 +27,14 @@
                           }
                         },
                         {
-                          breakpoint: AD.Configs.views.small,
+                          breakpoint: fnlprjt.Configs.views.small,
                           settings: {
                             slidesToShow: 2,
                             slidesToScroll: 2
                           }
                         },
                         {
-                          breakpoint: AD.Configs.views.xsmall,
+                          breakpoint: fnlprjt.Configs.views.xsmall,
                           settings: {
                             slidesToShow: 1,
                             slidesToScroll: 1
@@ -54,4 +54,4 @@
 		}
 		return new _carousel();
 	 }());
-}(window.AD = ( typeof AD !== 'undefined' && AD instanceof Object ) ? AD : {}, $AD=jQuery.noConflict()));
+}(window.fnlprjt = ( typeof fnlprjt !== 'undefined' && fnlprjt instanceof Object ) ? fnlprjt : {}, $fnlprjt=jQuery.noConflict()));

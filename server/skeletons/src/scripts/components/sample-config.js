@@ -1,6 +1,6 @@
-(function (AD, $) {
+(function (fnlprjt, $) {
 
-    AD.getCookie =function(cname) {
+    fnlprjt.getCookie =function(cname) {
             var name = cname + "=";
             var ca = document.cookie.split(';');
             for(var i=0; i<ca.length; i++) {
@@ -10,9 +10,9 @@
             }
             return "";
      }
-	 AD.Configs = (function () {
+	 fnlprjt.Configs = (function () {
 		function _config() {
-			this.activeClass = 'ad-active',
+			this.activeClass = 'fnlprjt-active',
             this.views = {
                 'xsmall' : 480,
                 'small'  : 766,
@@ -42,7 +42,7 @@
 		}
 		return new _config();
 	 }());
-	 AD.Utils = (function () {
+	 fnlprjt.Utils = (function () {
 		function _utils() {
 			this.getIEVersion = function(){
                 var agent = navigator.userAgent;
@@ -61,20 +61,20 @@
                 if( $('html').hasClass('lt-ie9') ) {
                     size = 'large';
                 } else {
-                    size = ( w <= AD.Configs.views.xsmall )? 'xsmall' : size;
-                    size = ( w >  AD.Configs.views.xsmall && w <= AD.Configs.views.small  )? 'small'  : size;
-                    size = ( w >  AD.Configs.views.small  )? 'medium' : size;
-                    size = ( w >  AD.Configs.views.medium )? 'large'  : size;
-                    size = ( w >  AD.Configs.views.large  )? 'xlarge' : size;
+                    size = ( w <= fnlprjt.Configs.views.xsmall )? 'xsmall' : size;
+                    size = ( w >  fnlprjt.Configs.views.xsmall && w <= fnlprjt.Configs.views.small  )? 'small'  : size;
+                    size = ( w >  fnlprjt.Configs.views.small  )? 'medium' : size;
+                    size = ( w >  fnlprjt.Configs.views.medium )? 'large'  : size;
+                    size = ( w >  fnlprjt.Configs.views.large  )? 'xlarge' : size;
                 }
 
-                AD.Configs.viewport = {
+                fnlprjt.Configs.viewport = {
                     size: size,
                     width: w,
                     height: h
                 };
 
-                return AD.Configs.viewport;
+                return fnlprjt.Configs.viewport;
             },
             this.isMobileView = function() {
                 return (this.getViewport().size == 'small' || this.getViewport().size == 'xsmall');
@@ -102,4 +102,4 @@
 		}
 		return new _utils();
 	 }());
-}(window.AD = ( typeof AD !== 'undefined' && AD instanceof Object ) ? AD : {}, $AD=jQuery.noConflict()));
+}(window.fnlprjt = ( typeof fnlprjt !== 'undefined' && fnlprjt instanceof Object ) ? fnlprjt : {}, $fnlprjt=jQuery.noConflict()));

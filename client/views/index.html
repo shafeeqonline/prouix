@@ -1,49 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Page Title</title>
-  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
-</head>
+    <head>
+      <title>Page Title</title>
+      <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    </head>
 
-<body>
-  <div class="container">
-    <h1> ProUIX setup for new project </h1>
-   <form id="package">
-      <datalist id="bowers">
-        <option value="Internet Explorer">
-        <option value="Firefox">
-        <option value="Chrome">
-        <option value="Opera">
-        <option value="Safari">
-      </datalist>
-    <div> Project name <input type="text" required placeholder="Your project folder name" name="projectname"></div>
-      <div> CSS namespace <input type="text" required placeholder="Classes get this prepended" name="cssname"></div>
-      <div id="packagejson">
-        <h2>Dependencied required for package JSON</h2>
-          <div class="predefined"><input type="checkbox" name="grunt-jsbeautifier"> JS Beautifier <input type="text" placeholder="Version" name="version"></div>
-       <div class="predefined"><input type="checkbox" name="grunt-contrib-jshint"> Grunt JSHint <input type="text" name="version" placeholder="Version"></div>
-        <div class="predefined"><input type="checkbox" name="grunt-scss-lint"> Grunt SASS Lint <input type="text" name="version" placeholder="Version"></div>
-        <div class="predefined"><input type="checkbox" name="grunt-concurrent"> Grunt Concurrent <input type="text" name="version" placeholder="Version"></div>
-        <button type="button" class="addmore btn btn-primary">Add new</button>
-      </div>
-      <div id="bowerjson">
-        <h2>Dependencied required for bower JSON</h2>
-       <div class="predefined"><input type="checkbox" name="slick"> Slick <input type="text" name="version" placeholder="Version"></div>
-        <div class="predefined"><input type="checkbox" name="parallax"> parallax <input type="text" name="version" placeholder="Version"></div>
-        <div class="predefined"><input type="checkbox" name="masonry"> Masonry <input type="text" placeholder="Version" name="version"></div>
-        <button type="button" class="addmore btn btn-primary">Add new</button>
-      </div>
-    
-    <input type="submit" value="Generate my project files" class=" btn btn-success">
-  </form>
-  <div id="successmsg">
-      <h3>Congratulations your project Code base is ready in the folder</h3>
-      <h3>Good luck with your project :)</h3>
-  </div>
-  </div>
-  <script type="text/javascript" src="/js/jquery.min.js"></script>
-  <script type="text/javascript" src="/js/scripts.js"></script>
-</body> 
-
+    <body>
+        <div class="main-content">
+            <div class="container">
+                <h1> ProUIX setup for new project </h1>
+                <form id="package">
+                    <datalist id="bowers">
+                        <option value="Internet Explorer">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
+                    <div> Project name <input type="text" required placeholder="Your project folder name" name="projectname"></div>
+                    <div> CSS namespace <input type="text" required placeholder="Classes get this prepended" name="cssname"></div>
+                    <div id="packagejson">
+                        <h2>Dependencies required for package JSON</h2>
+                        <div class="predefined">
+                            <input type="checkbox" name="grunt-jsbeautifier" id="grunt-jsbeautifier">
+                            <label for="grunt-jsbeautifier">JS Beautifier</label>
+                            <input type="text" placeholder="Version" name="version">
+                        </div>
+                        <div class="predefined">
+                            <input type="checkbox" name="grunt-contrib-jshint" id="grunt-contrib-jshint">
+                            <label for="grunt-contrib-jshint">Grunt JSHint</label>
+                            <input type="text" name="version" placeholder="Version">
+                        </div>
+                        <div class="predefined">
+                            <input type="checkbox" name="grunt-scss-lint" id="grunt-scss-lint">
+                            <label for="grunt-scss-lint">Grunt SASS Lint</label>
+                            <input type="text" name="version" placeholder="Version">
+                        </div>
+                        <div class="predefined">
+                            <input type="checkbox" name="grunt-concurrent" id="grunt-concurrent">
+                            <label for="grunt-concurrent">Grunt Concurrent</label>
+                            <input type="text" name="version" placeholder="Version">
+                        </div>
+                        <button type="button" class="addmore btn btn-primary">Add new</button>
+                    </div>
+                    <div id="bowerjson">
+                        <h2>Dependencies required for bower JSON</h2>
+                        <div class="predefined">
+                            <input type="checkbox" name="slick-carousel" id="slick-carousel">
+                            <label for="slick-carousel">Slick</label>
+                            <input type="text" name="version" placeholder="Version">
+                        </div>
+                        <div class="predefined">
+                            <input type="checkbox" name="parallax" id="parallax">
+                            <label for="parallax">Parallax</label>
+                            <input type="text" name="version" placeholder="Version">
+                        </div>
+                        <div class="predefined">
+                            <input type="checkbox" name="masonry" id="masonry">
+                            <label for="masonry">Masonry</label>
+                            <input type="text" placeholder="Version" name="version">
+                        </div>
+                        <button type="button" class="addmore btn btn-primary">Add new</button>
+                    </div> 
+                    <div class="button-container">
+                        <input type="submit" value="Generate my project files" class=" btn btn-success">
+                    </div>
+                </form>  
+                <div id="successmsg">
+                    <h3>Congratulations your project Code base is ready in the folder</h3>
+                    <h3>Good luck with your project :)</h3>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/scripts.js"></script>
+    </body>
 </html>

@@ -8,20 +8,20 @@
         for (components in globalComponents) {
             data = globalComponents[components];
             console.log("UTILITY : %s", data);
-            if (AD[data]) {
-                AD[data].init();
+            if (fnlprjt[data]) {
+                fnlprjt[data].init();
             }
 		}
 		//Page Specific components
-        console.log("MODULES : %s", JSON.stringify(AD.initUI));
-        for (components in AD.initUI) {
-            data = AD.initUI[components];
-            if (AD[data.module]) {
-                AD[data.module].init(data.selector);
+        console.log("MODULES : %s", JSON.stringify(fnlprjt.initUI));
+        for (components in fnlprjt.initUI) {
+            data = fnlprjt.initUI[components];
+            if (fnlprjt[data.module]) {
+                fnlprjt[data.module].init(data.selector);
             }			
 		}
     }());
     //--------------------------------------------------
     // end DOCUMENT READY...
     //==================================================
-}($AD));
+}($fnlprjt));
