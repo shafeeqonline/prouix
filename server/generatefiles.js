@@ -64,7 +64,7 @@ var readForm = function(request, response){
 			  regex: "fnlprjtjs",
 			  replacement: request.body.projectname.toLowerCase(),
 			  paths: [destdir],
-			  recursive: false,
+			  recursive: true,
 			  silent: true,
 			});	
 	fs.rename(destdir+'/src/scripts/project.main.js', destdir+'/src/scripts/'+ request.body.projectname.toLowerCase() +'.main.js', function(err) {
