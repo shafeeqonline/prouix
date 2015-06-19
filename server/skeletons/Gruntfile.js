@@ -147,8 +147,8 @@ module.exports = function(grunt) {
             },
             prod: {
                 files: {
-                    '<%= config.tmp %>/scripts/project.main.js': [
-                        '<%= config.src %>/scripts/project.main.js',
+                    '<%= config.tmp %>/scripts/fnlprjt.main.js': [
+                        '<%= config.src %>/scripts/fnlprjt.main.js',
                         '<%= config.src %>/scripts/plugins/*.js',
                         '!<%= config.src %>/scripts/handlebars_helpers.js'
                     ]
@@ -246,7 +246,7 @@ module.exports = function(grunt) {
             },
             prod: {
                 files: {
-                    '<%= config.dist %>/scripts/project.main.js': ['<%= config.tmp %>/scripts/components/*.js','<%= config.tmp %>/scripts/project.main.js'],
+                    '<%= config.dist %>/scripts/fnlprjt.main.js': ['<%= config.tmp %>/scripts/components/*.js','<%= config.tmp %>/scripts/fnlprjt.main.js'],
                     '<%= config.dist %>/scripts/vendor/vendor.js': [
                         'bower_components/jquery/jquery.js',
                         'bower_components/slick-carousel/slick/slick.js'

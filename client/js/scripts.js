@@ -2,8 +2,16 @@
   $('<input>').attr('name','package').appendTo(newbox).attr('placeholder', 'Package name');
   $('<input>').attr('name','version').appendTo(newbox).attr('placeholder', 'Version number');
 
-  $('form#package .addmore').on('click', function(){
+  var newboxbower = $('<div>').addClass('newpackages');
+  $('<input>').attr('name','package').appendTo(newboxbower).attr('placeholder', 'Package name').attr('list', 'bowers');
+  $('<input>').attr('name','version').appendTo(newboxbower).attr('placeholder', 'Version number');  
+
+  $('form#package #packagejson .addmore').on('click', function(){
   	var dupbox = newbox.clone();
+  	dupbox.insertBefore($(this))
+})
+    $('form#package #bowerjson .addmore').on('click', function(){
+  	var dupbox = newboxbower.clone();
   	dupbox.insertBefore($(this))
 })
 
@@ -27,7 +35,8 @@ $('form#package').on('submit', function(e){
 	$('#packagejson .newpackages').each(function(i, v){
 		var version = $(v).find("input[name='version']").val();
 		version = version || "latest";
-		packagedata[$(v).find("input[name='package']").val().toLowerCase()] = version;
+		if($(v).find("input[name='package']").val().toLowerCase() != 0)
+			packagedata[$(v).find("input[name='package']").val().toLowerCase()] = version;
 	})
 	dataToSend['packagedata'] = packagedata ;
 
@@ -41,6 +50,7 @@ $('form#package').on('submit', function(e){
 	$('#bowerjson .newpackages').each(function(i, v){
 		var version = $(v).find("input[name='version']").val();
 		version = version || "latest";
+		if($(v).find("input[name='package']").val().toLowerCase() != 0)
 		bowerdata[$(v).find("input[name='package']").val().toLowerCase()] = version;
 	})
 	dataToSend['bowerdata'] = bowerdata ;

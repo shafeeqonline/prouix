@@ -1,19 +1,7 @@
 {
-  "name": "Shafeeq",
-  "description": "Portfolio",
+  "name": "fnlprjt",
+  "description": "Sapient Project",
   "version": "0.0.1",
-  "homepage": "www.shafeeqonline.com",
-  "author": {
-    "name": "Shafeeq",
-    "url": "http://github.com/shafeeqonline/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shafeeqonline/graphical"
-  },
-  "bugs": {
-    "url": "https://github.com/shafeeqonline/graphical/issues"
-  },
   "engines": {
     "node": ">=0.8"
   },

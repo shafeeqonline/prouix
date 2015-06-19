@@ -3,6 +3,7 @@ body{
 }
 div{
 	margin:12px;
+	margin-left: 0;
 	width:60%;
 }
 .predefined input[name='version']{
