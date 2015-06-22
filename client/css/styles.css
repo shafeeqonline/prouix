@@ -30,14 +30,14 @@ input[name="version"]:focus {
     border-top-width: 0px;
 }
 .form-block > div{
-	margin-top:8px;
-    margin-bottom: 8px;
+	margin-top:7px;
+    margin-bottom: 7px;
 }
 /*.predefined input[name='version']{
 	float: right;
 }*/
 
-.predefined label, 
+/*.predefined label, 
 .newpackages input[name='package']{
 	width: 35%;
 }
@@ -50,7 +50,7 @@ input[name="version"]:focus {
 .newpackages input[name='version']{
     width: 55%;
     float: right;
-}
+}*/
 
 input{
 	padding-left: 5px;
@@ -61,21 +61,20 @@ label {
 }
 h1 {
     text-align: center;
-    margin:28px 0;
+    margin:24px 0;
 }
 h2{
     font-size: 24px;
 }
-#form-main input[type="text"]{
+/*#form-main input[type="text"]{
 	width:70%;
 	float:right;
 }
 
 #form-main label {
     width: 30%;
-}
+}*/
 #form-main .hint {
-    margin-left: 30%;
     font-size: 12px;
     padding-left: 5px;
 }
@@ -90,4 +89,11 @@ h2{
 
 .btn.btn-primary.addmore {
     padding: 3px 8px;
+}
+
+.form-control {
+    border: 1px solid #BDBDBD;
+    border-radius: 2px;
+    padding: 2px 4px;
+    height: auto;
 }

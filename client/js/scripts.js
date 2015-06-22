@@ -1,10 +1,32 @@
-  var newbox = $('<div>').addClass('newpackages');
-  $('<input>').attr('name','package').appendTo(newbox).attr('placeholder', 'Package name');
-  $('<input>').attr('name','version').appendTo(newbox).attr('placeholder', 'Version number');
+    var newbox = $('<div>').addClass('newpackages row');
+    $('<input>').attr({
+      'type':'text',
+      'name':'package',
+      'placeholder':'Package name',
+      'class': 'form-control'
+    }).appendTo(newbox).wrap('<div class="col-md-6"></div>');
+    $('<input>').attr({
+      'type':'text',
+      'name':'version',
+      'placeholder':'Version',
+      'class': 'form-control'
+    }).appendTo(newbox).wrap('<div class="col-md-6"></div>');
 
-  var newboxbower = $('<div>').addClass('newpackages');
-  $('<input>').attr('name','package').appendTo(newboxbower).attr('placeholder', 'Package name').attr('list', 'bowers');
-  $('<input>').attr('name','version').appendTo(newboxbower).attr('placeholder', 'Version number');  
+    var newboxbower = $('<div>').addClass('newpackages row');
+    $('<input>').attr({
+        'type':'text',
+        'name':'package',
+        'placeholder':'Package name',
+        'class': 'form-control'
+    }).appendTo(newboxbower).wrap('<div class="col-md-6"></div>');
+    $('<input>').attr({
+        'type':'text',
+        'name':'version',
+        'placeholder':'Version',
+        'class': 'form-control'
+    }).appendTo(newboxbower).wrap('<div class="col-md-6"></div>');
+  //$('<input>').attr('name','package').appendTo(newboxbower).attr('placeholder', 'Package name').attr('list', 'bowers');
+  //$('<input>').attr('name','version').appendTo(newboxbower).attr('placeholder', 'Version number');  
 
   $('form#package #packagejson .addmore').on('click', function(){
   	var dupbox = newbox.clone();
@@ -60,14 +82,14 @@ $('form#package').on('submit', function(e){
 	})
 	dataToSend['bowerdata'] = bowerdata ;
 
-	console.log(dataToSend)
+	console.log(dataToSend);
 
 	$.ajax({
 	  type: "POST",
 	  url: '/createpackage',
 	  data: dataToSend,
 	  success: function(data){
-	  	console.log("Its done ", data)
+	  	console.log("Its done ", data);
 	  }
 	});
 })

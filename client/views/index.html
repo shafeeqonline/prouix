@@ -26,79 +26,100 @@
                         <option value="less">
                     </datalist>
                     <div class="form-block" id="form-main">
-                        <div>
-                            <label for="projectname">Project name</label>
-                            <input type="text" required placeholder="Your project folder name" name="projectname" id="projectname">
-                        </div>
-                        <div>
-                            <label for="cssname">CSS namespace</label>
-                            <input type="text" required placeholder="Classes get this prepended" name="cssname" id="cssname">
-                        </div>
-                        <div>
-                            <label for="contwidth">Container width</label>
-                            <input type="text" required placeholder="Container width" name="contwidth" id="contwidth">
-                        </div>
-                        <div>
-                            <label for="gutterwidth">Gutter width</label>
-                            <input type="text" required placeholder="Gutter width" name="gutterwidth" id="gutterwidth">
-                        </div>
-                        <div>
-                            <label for="lrgdeskbrkpnt">Large Desktop breakpoint</label>
-                            <input type="text" required placeholder="From this value large desktop starts. Ex: 1400px" name="lrgdeskbrkpnt" id="lrgdeskbrkpnt">
-                            <div class="hint">
-                                <strong>Enter desktop value if not needed</strong>
+                        <div class="row">
+                            <label for="projectname" class="col-sm-4">Project name</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" required placeholder="Your project folder name" name="projectname" id="projectname">
                             </div>
                         </div>
-                        <div>
-                            <label for="deskbrkpnt">Desktop breakpoint</label>
-                            <input type="text" required placeholder="From this value desktop starts. Ex: 1024px" name="deskbrkpnt" id="deskbrkpnt">
+                        <div class="row">
+                            <label for="cssname" class="col-sm-4">CSS namespace</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" required placeholder="Classes get this prepended" name="cssname" id="cssname">
+                            </div>
                         </div>
-                        <div>
-                            <label for="tabbrkpnt">Tablet breakpoint</label>
-                            <input type="text" required placeholder="From this value tablet starts. Ex: 768px" name="tabbrkpnt" id="tabbrkpnt">
+                        <div class="row">
+                            <label for="contwidth" class="col-sm-4">Container width</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" required placeholder="Container width" name="contwidth" id="contwidth">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="gutterwidth" class="col-sm-4">Gutter width</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" required placeholder="Gutter width" name="gutterwidth" id="gutterwidth">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="lrgdeskbrkpnt" class="col-sm-4">Large Desktop breakpoint</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" required placeholder="From this value large desktop starts. Ex: 1400px" name="lrgdeskbrkpnt" id="lrgdeskbrkpnt">
+                                <div class="hint">
+                                    <strong>Enter desktop value if not needed</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="deskbrkpnt" class="col-sm-4">Desktop breakpoint</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" required placeholder="From this value desktop starts. Ex: 1024px" name="deskbrkpnt" id="deskbrkpnt">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="tabbrkpnt" class="col-sm-4">Tablet breakpoint</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" required placeholder="From this value tablet starts. Ex: 768px" name="tabbrkpnt" id="tabbrkpnt">
+                            </div>
                         </div>
                     </div>
                     <div class="row">
                         <div id="packagejson" class="form-block col-md-6">
                             <h2>Package JSON Dependencies</h2>
-                            <div class="predefined">
-                                <input type="checkbox" name="grunt-jsbeautifier" id="grunt-jsbeautifier">
-                                <label for="grunt-jsbeautifier">JS Beautifier</label>
-                                <input type="text" placeholder="Version" name="version">
+                            <div class="predefined row">
+                                <label class="col-sm-6"><input type="checkbox" name="grunt-jsbeautifier" id="grunt-jsbeautifier"> JS Beautifier</label>
+                                <div class="col-sm-6">
+                                    <input type="text" placeholder="Version" name="version" class="form-control">
+                                </div>
                             </div>
-                            <div class="predefined">
-                                <input type="checkbox" name="grunt-contrib-jshint" id="grunt-contrib-jshint">
-                                <label for="grunt-contrib-jshint">Grunt JSHint</label>
-                                <input type="text" name="version" placeholder="Version">
+                            <div class="predefined row">
+                                <label class="col-sm-6"><input type="checkbox" name="grunt-contrib-jshint" id="grunt-contrib-jshint"> Grunt JSHint</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="version" placeholder="Version" class="form-control">
+                                </div>
                             </div>
-                            <div class="predefined">
-                                <input type="checkbox" name="grunt-scss-lint" id="grunt-scss-lint">
-                                <label for="grunt-scss-lint">Grunt SASS Lint</label>
-                                <input type="text" name="version" placeholder="Version">
+                            <div class="predefined row">
+                                <label class="col-sm-6"><input type="checkbox" name="grunt-scss-lint" id="grunt-scss-lint"> Grunt SASS Lint</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="version" placeholder="Version" class="form-control">
+                                </div>
                             </div>
-                            <div class="predefined">
-                                <input type="checkbox" name="grunt-concurrent" id="grunt-concurrent">
-                                <label for="grunt-concurrent">Grunt Concurrent</label>
-                                <input type="text" name="version" placeholder="Version">
+                            <div class="predefined row">
+                                <label class="col-sm-6"><input type="checkbox" name="grunt-concurrent" id="grunt-concurrent"> Grunt Concurrent</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="version" placeholder="Version" class="form-control">
+                                </div>
                             </div>
                             <button type="button" class="addmore btn btn-primary">Add new</button>
                         </div>
                         <div id="bowerjson" class="form-block col-md-6">
                             <h2>Bower JSON Dependencies</h2>
-                            <div class="predefined">
-                                <input type="checkbox" name="slick-carousel" id="slick-carousel">
-                                <label for="slick-carousel">Slick</label>
-                                <input type="text" name="version" placeholder="Version">
+                            <div class="predefined row">
+                                <label class="col-sm-6"><input type="checkbox" name="slick-carousel" id="slick-carousel"> Slick</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="version" placeholder="Version" class="form-control">
+                                </div>
                             </div>
-                            <div class="predefined">
-                                <input type="checkbox" name="parallax" id="parallax">
-                                <label for="parallax">Parallax</label>
-                                <input type="text" name="version" placeholder="Version">
+                            <div class="predefined row">
+                                <label class="col-sm-6"><input type="checkbox" name="parallax" id="parallax"> Parallax</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="version" placeholder="Version" class="form-control">
+                                </div>
                             </div>
-                            <div class="predefined">
-                                <input type="checkbox" name="masonry" id="masonry">
-                                <label for="masonry">Masonry</label>
-                                <input type="text" placeholder="Version" name="version">
+                            <div class="predefined row">
+                                <label class="col-sm-6"><input type="checkbox" name="masonry" id="masonry"> Masonry</label>
+                                <div class="col-sm-6">
+                                    <input type="text" placeholder="Version" name="version" class="form-control">
+                                </div>
                             </div>
                             <button type="button" class="addmore btn btn-primary">Add new</button>
                         </div>
