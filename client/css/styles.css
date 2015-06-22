@@ -26,7 +26,7 @@ input[name="version"]:focus {
 
 .main-content > .container {
     background: #F4F4F4;
-    border: 1px solid #BBBBBB;
+    border: 1px solid #CCCCCC;
     border-top-width: 0px;
 }
 .form-block > div{
