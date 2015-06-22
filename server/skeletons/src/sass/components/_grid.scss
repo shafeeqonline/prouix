@@ -140,7 +140,7 @@ ul, ol {
 }
 
 .container {
-  @include container-fixed();
+  @include container-fixed($gutterwidth);
 
     @include tablet{
         width: $tablet-width - $gutterwidth;
@@ -151,4 +151,7 @@ ul, ol {
     @include lgdesktop{
         width: $max-width;
     }
+}
+.row {
+  @include make-row(gutterwidth);
 }
