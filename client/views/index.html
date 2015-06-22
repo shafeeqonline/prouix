@@ -12,14 +12,26 @@
                 <h1> ProUIX setup for new project </h1>
                 <form id="package">
                     <datalist id="bowers">
-                        <option value="Internet Explorer">
-                        <option value="Firefox">
-                        <option value="Chrome">
-                        <option value="Opera">
-                        <option value="Safari">
+                        <option value="animate.css">
+                        <option value="font-awesome">
+                        <option value="material-design-icons">
+                        <option value="normalize-css">
+                        <option value="underscore">
+                        <option value="coffee-script">
+                        <option value="Materialize">
+                        <option value="typeahead.js">
+                        <option value="picturefill">
+                        <option value="d3">
+                        <option value="lodash">
+                        <option value="less">
                     </datalist>
                     <div> Project name <input type="text" required placeholder="Your project folder name" name="projectname"></div>
                     <div> CSS namespace <input type="text" required placeholder="Classes get this prepended" name="cssname"></div>
+                    <div> Container width <input type="text" required placeholder="Container width" name="contwidth"></div>
+                    <div> Gutter width <input type="text" required placeholder="Gutter width" name="gutterwidth"></div>
+                    <div> Large Desktop breakpoint <input type="text" required placeholder="From this value large desktop starts. Ex: 1400px" name="lrgdeskbrkpnt"><br><strong> If you dont have it then enter your desktop value</strong></div>
+                    <div> Desktop breakpoint <input type="text" required placeholder="From this value desktop starts. Ex: 1024px" name="deskbrkpnt"></div>
+                    <div> Tablet breakpoint <input type="text" required placeholder="From this value tablet starts. Ex: 768px" name="tabbrkpnt"></div>
                     <div id="packagejson">
                         <h2>Dependencies required for package JSON</h2>
                         <div class="predefined">
@@ -63,9 +75,7 @@
                         </div>
                         <button type="button" class="addmore btn btn-primary">Add new</button>
                     </div> 
-                    <div class="button-container">
                         <input type="submit" value="Generate my project files" class=" btn btn-success">
-                    </div>
                 </form>  
                 <div id="successmsg">
                     <h3>Congratulations your project Code base is ready in the folder</h3>

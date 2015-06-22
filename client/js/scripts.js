@@ -25,6 +25,11 @@ $('form#package').on('submit', function(e){
 
 	dataToSend.projectname = $(this).find('input[name="projectname"]').val();
 	dataToSend.cssname = $(this).find('input[name="cssname"]').val();
+	dataToSend.contwidth = $(this).find('input[name="contwidth"]').val();
+	dataToSend.gutterwidth = $(this).find('input[name="gutterwidth"]').val();
+	dataToSend.lrgdeskbrkpnt = $(this).find('input[name="lrgdeskbrkpnt"]').val();
+	dataToSend.deskbrkpnt = $(this).find('input[name="deskbrkpnt"]').val();
+	dataToSend.tabbrkpnt = $(this).find('input[name="tabbrkpnt"]').val();
 	$(this).find('#packagejson .predefined input:checkbox').each(function(i, v){
 		if($(v).prop('checked')){
 			var version = $(v).parent().find('input:text').val();
