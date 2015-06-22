@@ -125,18 +125,19 @@ $color-list: (
 // define variables for spacings
 // ==========================================================================
 $max-width: 100% !global;
+$gutterwidth: gutrwdth;
+$gutterside:$gutterwidth/2;
+$mobilegutter: $gutterwidth/4;
 
-$gutterside:15px;
-$mobilegutter: 8px;
-
-$max-width: 980px;
+$max-width: contwidth ;
 $min-width: 320px;
 
 // define breakpoints
 // ==========================================================================
 
-$tablet-width: 768px;
-$desktop-width: 1024px;
+$tablet-width: tabbrkpnt;
+$desktop-width: deskbrkpnt;
+$lgdesktop-width: lgdskbrkpnt;
 
 @mixin mobile {
   @media (max-width: #{$tablet-width -1px}) {
@@ -151,7 +152,13 @@ $desktop-width: 1024px;
 }
 
 @mixin desktop {
-  @media (min-width: #{$desktop-width}) {
+  @media (min-width: #{$desktop-width})  and (max-width: #{$lgdesktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin lgdesktop {
+  @media (min-width: #{$lgdesktop-width}) {
     @content;
   }
 }

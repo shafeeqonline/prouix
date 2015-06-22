@@ -138,3 +138,17 @@ ul, ol {
         }
     }
 }
+
+.container {
+  @include container-fixed();
+
+    @include tablet{
+        width: $tablet-width - $gutterwidth;
+    }
+    @include desktop{
+        width: $desktop-width - $gutterwidth;
+    }
+    @include lgdesktop{
+        width: $max-width;
+    }
+}

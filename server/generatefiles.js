@@ -58,7 +58,42 @@ var readForm = function(request, response){
 			  paths: [destdir],
 			  recursive: true,
 			  silent: true,
-			});	
+			});
+			replace({
+			  regex: "gutrwdth",
+			  replacement: request.body.gutterwidth,
+			  paths: [destdir +'/src'],
+			  recursive: true, 
+			  silent: true,
+			});
+			replace({
+			  regex: "contwidth",
+			  replacement: request.body.contwidth,
+			  paths: [destdir +'/src'],
+			  recursive: true, 
+			  silent: true,
+			});
+			replace({
+			  regex: "tabbrkpnt",
+			  replacement: request.body.tabbrkpnt,
+			  paths: [destdir +'/src'],
+			  recursive: true, 
+			  silent: true,
+			});
+			replace({
+			  regex: "deskbrkpnt",
+			  replacement: request.body.deskbrkpnt,
+			  paths: [destdir +'/src'],
+			  recursive: true, 
+			  silent: true,
+			});
+			replace({
+			  regex: "lgdskbrkpnt",
+			  replacement: request.body.lrgdeskbrkpnt,
+			  paths: [destdir +'/src'],
+			  recursive: true, 
+			  silent: true,
+			});
 		fs.rename(destdir+'/src/scripts/project.main.js', destdir+'/src/scripts/'+ request.body.projectname.toLowerCase() +'.main.js', function(err) {
 		    if ( err ) console.log('ERROR: ' + err);
 		});
