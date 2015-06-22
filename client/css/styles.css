@@ -1,40 +1,93 @@
+.container {
+    max-width: 1024px;
+}
+
+body {
+    /*background: #F4F4F4;*/
+    color: #666;
+}
+
+input[type="text"],
+input[name="package"],
+input[name="version"] {
+    border: 1px solid #BDBDBD;
+}
+
+input[type="text"]:focus,
+input[name="package"]:focus,
+input[name="version"]:focus {
+    border-color: #303F9F;
+}
+
 .main-content {
-	background:#4ea082;
-    margin: 0;
+	margin: 0;
     height: 100%;
 }
-#package div{
-	margin:10px 0px;
-	width:60%;
+
+.main-content > .container {
+    background: #F4F4F4;
+    border: 1px solid #BBBBBB;
+    border-top-width: 0px;
 }
-.predefined input[name='version']{
+.form-block > div{
+	margin-top:8px;
+    margin-bottom: 8px;
+}
+/*.predefined input[name='version']{
 	float: right;
+}*/
+
+.predefined label, 
+.newpackages input[name='package']{
+	width: 35%;
 }
+
+.newpackages input[name='package'] {
+    width: 40%;
+}
+
+.predefined input[name='version'],
+.newpackages input[name='version']{
+    width: 55%;
+    float: right;
+}
+
 input{
-	margin-right:20px;
 	padding-left: 5px;
 }
 label {
     font-weight: normal;
+    margin-bottom: 0px;
 }
 h1 {
     text-align: center;
-    margin:50px 0;
+    margin:28px 0;
 }
 h2{
-	padding-top: 30px;
+    font-size: 24px;
 }
-h3{
-	margin-top: 50px; 
-}
-input[type="text"]{
-	width:60%;
+#form-main input[type="text"]{
+	width:70%;
 	float:right;
 }
+
+#form-main label {
+    width: 30%;
+}
+#form-main .hint {
+    margin-left: 30%;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
 #successmsg{
 	display:none;
 }
 .btn.btn-success{
 	width:100%;
-	margin:20px;
+	margin:20px 0px;
+}
+
+.btn.btn-primary.addmore {
+    padding: 3px 8px;
 }
