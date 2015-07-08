@@ -1,9 +1,9 @@
 .main-header {
-	padding: 15px 0;
+	padding: $gutterside 0;
 }
 
 .main-footer {
-	padding: 15px 0;
+	padding: $gutterside 0;
 }
 
 /****************** COMPONENTS **********************/
@@ -14,9 +14,6 @@
 }
 
 .page-list ul li {
-    border: 1px solid aliceblue;
-    background: #EEEEEE;    
-    display: inline-block;
 }
 
 .page-list ul li a {
@@ -42,7 +39,7 @@
     width: 100%;
     background: white;
     opacity: 0.4;
-    padding: 15px;
+    padding: $gutterside;
     height: 400px;
 }
 
@@ -111,31 +108,27 @@
 .cards .card {
     background: $color-primary-light;
     color: $text-color-dark;
-    padding: 15px;
+    padding: $gutterside;
     width: 100%;
     height: 100%;
+    @include border-radius(4px);
 }
 
 .cards .card h3 {
     margin-top: 0px;
 }
 
-.component.cards .component-content {
-    padding: 0px;
-    background: none;
-}
-
 .cards .component-content > .row {
-    margin-left: -7.5px;
-    margin-right: -7.5px;
+    margin-left: -$gutterside/2;
+    margin-right: -$gutterside/2;
     /*display: table;
     width: 100%;*/
     /*overflow: hidden;*/
 }
 
 .cards .component-content > .row > div {
-    padding-left: 7.5px;
-    padding-right: 7.5px;
+    padding-left: $gutterside/2;
+    padding-right: $gutterside/2;
     /*float: none;
     display: table-cell;
     vertical-align: top;*/
@@ -176,8 +169,8 @@
     left: 0px;
     border: 1px solid silver;
     background: white;
-    border-radius: 6px;
-    padding: 15px;
+    @include border-radius(6px);
+    padding: $gutterside;
     z-index: get-zindex(z5);
 }
 

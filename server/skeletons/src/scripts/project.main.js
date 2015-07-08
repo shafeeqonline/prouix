@@ -15,9 +15,11 @@
 		//Page Specific components
         console.log("MODULES : %s", JSON.stringify(fnlprjt.initUI));
         for (components in fnlprjt.initUI) {
+            console.log("MODULE : %s", components);
             data = fnlprjt.initUI[components];
-            if (fnlprjt[data.module]) {
-                fnlprjt[data.module].init(data.selector);
+            console.log("MODULE : %s", JSON.stringify(data));
+            if (fnlprjt[components]) {
+                fnlprjt[components].init(data);
             }			
 		}
     }());

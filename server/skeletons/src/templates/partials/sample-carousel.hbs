@@ -1,7 +1,7 @@
 ---
 component: carousel
 ---
-<div class="hero-carousel slider" id="hero-carousel-main">
+<div class="hero-carousel slider" id="hero-carousel-main" data-slider-dots="true" data-slider-infinite="true">
     {{#each this}}
         <div class="slide">
             <div class="bg">
@@ -21,5 +21,5 @@ component: carousel
     {{/each}}
 </div>
 <script type="text/javascript">
-    fnlprjt.initUI.push({"module":"Carousel", "selector":"#hero-carousel-main"});
+    fnlprjt.initUI["Carousel"] = {"selector":"#hero-carousel-main"};
 </script>

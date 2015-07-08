@@ -7,12 +7,12 @@ layout: sample-layout.hbs
     <div class="full-component-placeholder">
         {{>sample-carousel sample-images}}
     </div>
-    <div class="contained-component-placeholder card-container ram-layout-4">
+    <div class="contained-component-placeholder card-container nmspc-layout-4">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
                     <div class="row">                            
-                        {{>sample-bookmarks sample-bookmarks}}
+                        {{>sample-tooltip sample-cards.card2}}
                     </div>                        
                 </div>
                 <div class="col-sm-9">
@@ -22,12 +22,10 @@ layout: sample-layout.hbs
                 </div>
                 <div class="col-sm-12">
                     <div class="row">
-                        {{>sample-tooltip sample-cards.card2}}
+                        {{>sample-cards sample-card}}
                     </div>
                 </div>
             </div>
             </div>
         </div>
-    </div>
-</div>    
-
+</div>
