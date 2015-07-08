@@ -1,0 +1,17 @@
+---
+component: cards
+---
+<div class="component cards nmspc-layout-col-4">
+    <div class="component-content clearfix">
+        <div class="row">
+        {{#each this}}
+            <div class="col-sm-3">
+                <div class="card">
+                    <h3 class="title">{{title}}</h3>
+                    <span class="description">{{{description}}}</span>
+                </div>
+            </div>
+        {{/each}}
+        </div>
+    </div>
+</div>

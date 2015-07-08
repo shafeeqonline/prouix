@@ -1,0 +1,21 @@
+---
+component: accordion
+---
+<div class="component accordion nmspc-layout-col-4">
+    <div class="component-content">
+        <div class="panel-group" id="{{accordion-id}}" role="tablist" aria-multiselectable="true">
+            {{#each panel}}
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="{{title-id}}">
+                    <h4 class="panel-title">
+                        <a role="button" class="{{#compare @index '==' 0}}collapsed{{/compare}}" data-toggle="collapse" data-parent="#{{../accordion-id}}" href="#{{id}}" aria-expanded="{{#compare @index '==' 0}}true{{else}}false{{/compare}}" aria-controls="{{id}}">{{{title}}}</a>
+                    </h4>
+                </div>
+                <div id="{{id}}" class="panel-collapse collapse {{#compare @index '==' 0}}in{{/compare}}" role="tabpanel" aria-labelledby="{{title-id}}">
+                    <div class="panel-body">{{{body}}}</div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

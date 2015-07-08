@@ -1,7 +1,4 @@
-$bg-component: #607D8B;
-$bg-component-alternate: #8BC34A;
-
-$color-primary: #3F51B5;
+/*$color-primary: #3F51B5;
 $color-primary-light: #C5CAE9;
 $color-primary-dark: #303F9F;
 
@@ -16,6 +13,25 @@ $text-color-dark-disabled: #BDBDBD;
 $text-color-dark-dividers: #E1E1E1;
 
 $text-color-light: #CCCCCC;
+$text-color-light-secondary: #888888;
+$text-color-light-disabled: #424242;
+$text-color-light-dividers: #1E1E1E;*/
+
+$color-primary: #3F51B5;
+$color-primary-light: #9FA8DA;
+$color-primary-dark: #303F9F;
+
+$color-secondary: #f44336;
+$color-secondary-light: #ef9a9a;
+$color-secondary-dark: #d32f2f;
+$color-secondary-fallback: #FFFFFF;
+
+$text-color-dark: #212121;
+$text-color-dark-secondary: #666666;
+$text-color-dark-disabled: #BDBDBD;
+$text-color-dark-dividers: #E1E1E1;
+
+$text-color-light: #FFFFFF;
 $text-color-light-secondary: #888888;
 $text-color-light-disabled: #424242;
 $text-color-light-dividers: #1E1E1E;
@@ -260,51 +276,3 @@ $zindex-modal:             1050 !default;
 $container-tablet: 700px;
 $container-desktop: 980px;
 $container-mobile: 400px;
-
-.pro-theme {
-    color: $text-color-dark;
-    .component {
-        padding: 0px;
-        .component-content {
-            padding: $gutterside;
-            display: block;
-            height: 100%;
-            background-color: $color-primary;
-            color: $text-color-light;
-            a{
-                color: $color-secondary-light;
-                &:hover{
-                    color: $color-secondary;
-                }
-            }
-        }        
-        &:nth-child(2n) .component-content {
-            background-color: $color-primary-light;
-            color: $text-color-dark;
-            a{
-                color: $color-secondary-dark;
-                &:hover{
-                    color: $color-secondary;
-                }
-            }
-        }
-        h3 {
-            margin-top: 0px;
-        }
-    }
-    .card-container {
-        padding-top: 15px;
-        .component {
-            padding: 0px 15px 15px 0px;
-        }
-        &>.container {
-            padding-right: 0px;
-        }
-    }
-    a{
-        color: $color-secondary;
-        &:hover{
-            color: $color-secondary-light;
-        }
-    }
-}

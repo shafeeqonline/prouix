@@ -1,4 +1,3 @@
-@import "variables";
 // ----------------------------------------------------
 // _ad-sub-hero
 // ----------------------------------------------------
@@ -9,6 +8,71 @@ ul, ol {
 
 .pro-theme {
     color: $text-color-dark;
+    a{
+        color: $color-secondary;
+        &:hover{
+            color: $color-secondary-dark;
+        }
+    }
+    .btn {
+        background: $color-secondary;
+        color: $color-secondary-fallback;
+        border-color: $color-secondary;
+        &:hover{
+            background: $color-secondary-dark;
+            color: $color-secondary-fallback;
+        }
+    }
+    .component {
+        padding: 0px;
+        color: $text-color-dark;
+        .component-content {
+            padding: 15px;
+            display: block;
+            height: 100%;
+            background-color: $color-primary-light;
+        }
+        a{
+            color: $color-secondary;
+            &:hover{
+                color: $color-secondary-dark;
+            }
+        }
+        &:nth-child(2n) {
+            color: $text-color-light;
+            .component-content {            
+                background-color: $color-primary;
+            }
+            a{
+                color: $color-secondary-light;
+                &:hover{
+                    color: $color-secondary;
+                }
+            }
+        }        
+        h1, h2, h3 {
+            margin-top: 0px;
+        }
+        .btn {
+            color: $text-color-light;
+            &:hover{
+                color: $text-color-light;
+            }
+        }
+    }
+    .card-container {
+        padding-top: 15px;
+        .component {
+            padding: 0px 15px 15px 0px;
+        }
+        &>.container {
+            padding-right: 0px;
+        }
+    }
+}
+
+/*.pro-theme {
+            color: $text-color-dark;
     .component {
         padding: 0px;
         .component-content {
@@ -23,17 +87,7 @@ ul, ol {
                     color: $color-secondary;
                 }
             }
-        }        
-        /*&:nth-child(2n) .component-content {
-            background-color: $color-primary-light;
-            color: $text-color-dark;
-            a{
-                color: $color-secondary-dark;
-                &:hover{
-                    color: $color-secondary;
-                }
-            }
-        }*/
+        }
         h3 {
             margin-top: 0px;
         }
@@ -53,7 +107,7 @@ ul, ol {
             color: $color-secondary-light;
         }
     }
-}
+}*/
 
 .nmspc-layout-col-1, .nmspc-layout-col-2, .nmspc-layout-col-3, .nmspc-layout-col-4 {
     float: left;

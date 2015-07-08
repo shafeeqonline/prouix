@@ -61,6 +61,10 @@
     width: 100%;
 }
 
+.component.bookmarks-menu .component-content {
+    padding: 0px;
+}
+
 .bookmarks-menu ul {
     padding-left: 0px;
 }
@@ -75,8 +79,9 @@
     padding: 8px 16px;
 }
 
-.bookmarks-menu ul li a:hover {
-    background-color: $color-primary-light;
+.component.bookmarks-menu ul li a:hover {
+    background-color: $color-primary-dark;
+    color: $color-secondary-light;
 }
 
 
@@ -100,3 +105,108 @@
 }
 
 /****************** COMPONENTS **********************/
+
+/**********************CARDS*************************/
+
+.cards .card {
+    background: $color-primary-light;
+    color: $text-color-dark;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.cards .card h3 {
+    margin-top: 0px;
+}
+
+.component.cards .component-content {
+    padding: 0px;
+    background: none;
+}
+
+.cards .component-content > .row {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+    /*display: table;
+    width: 100%;*/
+    /*overflow: hidden;*/
+}
+
+.cards .component-content > .row > div {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    /*float: none;
+    display: table-cell;
+    vertical-align: top;*/
+    /*margin-bottom: -99999px;
+    padding-bottom: 99999px;*/
+}
+
+/**********************CARDS*************************/
+
+/********************ACCORDION***********************/
+
+.component.accordion .panel-group {
+    margin-bottom: 0px;
+}
+
+/*.component.accordion .panel-title a:hover, 
+.component.accordion .panel-title a:active,
+.component.accordion .panel-title a:focus {
+    text-decoration: none;
+}*/
+
+/********************ACCORDION***********************/
+
+/*********************TOOLTIP************************/
+
+/*.tooltip-block {
+    position: relative;
+}
+
+.tooltip-block .link {
+    cursor: help;
+}
+
+.tooltip-block .tooltip {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    border: 1px solid silver;
+    background: white;
+    border-radius: 6px;
+    padding: 15px;
+    z-index: get-zindex(z5);
+}
+
+.tooltip-block:hover .tooltip {
+    display: block;
+}*/
+
+.tooltip .tooltip-inner {
+    background: $color-primary-dark;
+    padding: 8px;
+}
+
+.tooltip {
+    &.top .tooltip-arrow,
+    &.top-left .tooltip-arrow, 
+    &.top-right .tooltip-arrow {
+        border-top-color: $color-primary-dark;
+    }
+    &.right .tooltip-arrow {
+        border-right-color: $color-primary-dark;
+    }
+    &.left .tooltip-arrow {
+        border-left-color: $color-primary-dark;
+    }
+    &.bottom .tooltip-arrow, 
+    &.bottom-left .tooltip-arrow, 
+    &.bottom-right .tooltip-arrow {
+        border-bottom-color: $color-primary-dark;
+    }
+}
+
+/*********************TOOLTIP************************/

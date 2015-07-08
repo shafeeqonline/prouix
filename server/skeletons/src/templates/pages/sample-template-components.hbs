@@ -1,0 +1,33 @@
+---
+title: Test page
+heading: Components
+layout: sample-layout.hbs
+---
+<div class="page-content my-theme">
+    <div class="full-component-placeholder">
+        {{>sample-carousel sample-images}}
+    </div>
+    <div class="contained-component-placeholder card-container ram-layout-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="row">                            
+                        {{>sample-bookmarks sample-bookmarks}}
+                    </div>                        
+                </div>
+                <div class="col-sm-9">
+                    <div class="row">
+                        {{>sample-accordion sample-accordion}}
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="row">
+                        {{>sample-tooltip sample-cards.card2}}
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>    
+

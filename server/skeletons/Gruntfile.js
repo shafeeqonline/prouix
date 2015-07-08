@@ -171,7 +171,8 @@ module.exports = function(grunt) {
                             'bower_components/jquery/jquery.js',
                             'bower_components/slick-carousel/slick/slick.js',
                             'bower_components/parallax/deploy/jquery.parallax.js',
-							'bower_components/picturefill/src/picturefill.js'
+							'bower_components/picturefill/src/picturefill.js',
+							'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js'
                         ],
                         dest: '<%= config.tmp %>'
                     },
