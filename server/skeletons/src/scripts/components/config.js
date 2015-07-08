@@ -9,10 +9,10 @@
                 if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
             }
             return "";
-     }
-	 fnlprjt.Configs = (function () {
-		function _config() {
-			this.activeClass = 'fnlprjt-active',
+     };
+     fnlprjt.Configs = (function () {
+        function _config() {
+            this.activeClass = 'fnlprjt-active',
             this.views = {
                 'small'  : tabbrkpnt,
                 'medium' : deskbrkpnt,
@@ -35,15 +35,15 @@
                     return navigator.userAgent.match(/IEMobile/i);
                 })()
             },
-			this.init = function () {
-				return this;
-			};
-		}
-		return new _config();
-	 }());
-	 fnlprjt.Utils = (function () {
-		function _utils() {
-			this.getIEVersion = function(){
+            this.init = function () {
+                return this;
+            };
+        }
+        return new _config();
+     }());
+     fnlprjt.Utils = (function () {
+        function _utils() {
+            this.getIEVersion = function(){
                 var agent = navigator.userAgent;
                 var reg = /MSIE\s?(\d+)(?:\.(\d+))?/i;
                 var matches = agent.match(reg);
@@ -80,10 +80,10 @@
             },
             this.isTabletView = function() {
                 return (this.getViewport().size == 'medium');
-            }
+            };
             this.setTooltip = function() {
                  $('[data-toggle="tooltip"]').tooltip();
-            }
+            };
             /*this.setHandlebarHelpers = function() {
                 if(Handlebars) {                
                     Handlebars.registerHelper('compare', function (lvalue, operator, rvalue, options) {
