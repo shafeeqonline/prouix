@@ -10,9 +10,9 @@
             }
             return "";
      }
-	 fnlprjt.Configs = (function () {
-		function _config() {
-			this.activeClass = 'fnlprjt-active',
+     fnlprjt.Configs = (function () {
+        function _config() {
+            this.activeClass = 'fnlprjt-active',
             this.views = {
                 'small'  : tabbrkpnt,
                 'medium' : deskbrkpnt,
@@ -35,15 +35,15 @@
                     return navigator.userAgent.match(/IEMobile/i);
                 })()
             },
-			this.init = function () {
-				return this;
-			};
-		}
-		return new _config();
-	 }());
-	 fnlprjt.Utils = (function () {
-		function _utils() {
-			this.getIEVersion = function(){
+            this.init = function () {
+                return this;
+            };
+        }
+        return new _config();
+     }());
+     fnlprjt.Utils = (function () {
+        function _utils() {
+            this.getIEVersion = function(){
                 var agent = navigator.userAgent;
                 var reg = /MSIE\s?(\d+)(?:\.(\d+))?/i;
                 var matches = agent.match(reg);
@@ -81,24 +81,24 @@
             this.isTabletView = function() {
                 return (this.getViewport().size == 'medium');
             }
-			this.init = function () {
-				var that = this; //to behave proxy
-				this.getViewport();
-				//--------------------------------------------------
-				// Add IE10 Class
-				//--------------------------------------------------
-				if(this.getIEVersion().major === '10') {
-					$('html').addClass('ie10');
-				}
-				//--------------------------------------------------
-				//--------------------------------------------------
-				// RESIZE EVENT
-				// Fires "windowResize" on $(window)
-				//--------------------------------------------------
+            this.init = function () {
+                var that = this; //to behave proxy
+                this.getViewport();
+                //--------------------------------------------------
+                // Add IE10 Class
+                //--------------------------------------------------
+                if(this.getIEVersion().major === '10') {
+                    $('html').addClass('ie10');
+                }
+                //--------------------------------------------------
+                //--------------------------------------------------
+                // RESIZE EVENT
+                // Fires "windowResize" on $(window)
+                //--------------------------------------------------
                 console.log("CONFIG");
-				return this;
-			};
-		}
-		return new _utils();
-	 }());
+                return this;
+            };
+        }
+        return new _utils();
+     }());
 }(window.fnlprjt = ( typeof fnlprjt !== 'undefined' && fnlprjt instanceof Object ) ? fnlprjt : {}, $fnlprjt=jQuery.noConflict()));
