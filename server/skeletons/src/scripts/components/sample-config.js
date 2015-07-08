@@ -14,10 +14,9 @@
 		function _config() {
 			this.activeClass = 'fnlprjt-active',
             this.views = {
-                'xsmall' : 480,
-                'small'  : 766,
-                'medium' : 992,
-                'large'  : 1200
+                'small'  : tabbrkpnt,
+                'medium' : deskbrkpnt,
+                'large'  : lgdskbrkpnt
             },
             this.isMobile = {
                 Android: (function() {

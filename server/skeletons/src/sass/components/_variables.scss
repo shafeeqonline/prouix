@@ -125,19 +125,19 @@ $color-list: (
 // define variables for spacings
 // ==========================================================================
 $max-width: 100% !global;
-$gutterwidth: gutrwdth;
+$gutterwidth: gutrwdthpx;
 $gutterside:$gutterwidth/2;
 $mobilegutter: $gutterwidth/4;
 
-$max-width: contwidth ;
+$max-width: contwidthpx ;
 $min-width: 320px;
 
 // define breakpoints
 // ==========================================================================
 
-$tablet-width: tabbrkpnt;
-$desktop-width: deskbrkpnt;
-$lgdesktop-width: lgdskbrkpnt;
+$tablet-width: tabbrkpntpx;
+$desktop-width: deskbrkpntpx;
+$lgdesktop-width: lgdskbrkpntpx;
 
 @mixin mobile {
   @media (max-width: #{$tablet-width -1px}) {
