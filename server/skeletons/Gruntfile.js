@@ -21,6 +21,7 @@ module.exports = function(grunt) {
             tmp: 'tmp'
         },
 
+        //Watch these files to do thier respective tasks on change
         watch: {
             assemble: {
                 files: ['<%= config.src %>/{content,data,templates}/{,*/}*.{hbs,json}'],
@@ -78,6 +79,7 @@ module.exports = function(grunt) {
             }
         },
 
+        //All the pages are generated here by taking in the layout and partials in the specified directory
         assemble: {
             dev: {
                 options: {
@@ -107,6 +109,7 @@ module.exports = function(grunt) {
             }
         },
 
+        //Takes in all sass files from source, you can add files that you want them to get added
         compass: {
             dev: {
                 options: {
@@ -156,6 +159,9 @@ module.exports = function(grunt) {
             }
         },
 
+        //Edittable
+        //Copies all the files from various sources to respective directories
+        //This is where you add all you plugin files that need to get copied from bower & other sources 
         copy: {
             dev: {
                 files: [
@@ -381,7 +387,7 @@ module.exports = function(grunt) {
 
     });
 
-    // All tasks
+    // All tasks are resitered pre built
     grunt.registerTask('server', function (target) {
         if (target === 'dist') {
             return grunt.task.run(['build', 'connect:dist:keepalive']);
@@ -392,7 +398,6 @@ module.exports = function(grunt) {
             'copy:dev',
             'compass:dev',
             'assemble:dev',
-            'modernizr',
             'connect:dev',
             'watch'
         ]);
@@ -404,10 +409,7 @@ module.exports = function(grunt) {
         'useminPrepare',
         'copy:prod',
         'concurrent:prod',
-        // 'autoprefixer',
         'concat:prod',
-        // 'cssmin', // Stripping out legacy flexbox
-        // 'copy:styles',
         'uglify:prod',
         'usemin',
         'modernizr'
@@ -420,8 +422,6 @@ module.exports = function(grunt) {
         'copy:prod',
         'concurrent:werk',
         'concat:prod',
-        // 'cssmin', // Stripping out legacy flexbox
-        // 'copy:styles',
         'uglify:prod',
         'usemin',
         'modernizr'
