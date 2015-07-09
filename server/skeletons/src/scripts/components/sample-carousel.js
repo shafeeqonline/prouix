@@ -1,54 +1,25 @@
 (function (fnlprjt, $) {
 	 fnlprjt.Carousel = (function () {
 		function _carousel() {
-            this.initCarousel = function(selector) {
+            this.initCarousel = function(data) {
                 console.log("CAROUSEL");
-                $(selector).slick({
-                    dots: true,
-                    infinite: false,
-                    speed: 300,
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+                var selector = data.selector;
+				$(selector).each(function() {
+					var el = $(this);
+					var settings = {
+						dots: el.attr("data-slider-dots") == "true",
+						infinite: el.attr("data-slider-infinite") == "true",
+						speed: el.attr("data-slider-animate-speed") ? el.attr("data-slider-animate-speed") : 300,
+						slidesToShow: el.attr("data-slides") ? el.attr("data-slides") : 1,
+						slidesToScroll: el.attr("data-slides-scroll") ? el.attr("data-slides-scroll") : (el.attr("data-slides") ? el.attr("data-slides") : 1)
+					};
+					console.log(JSON.stringify(settings));
+					el.slick(settings);
                 });
-                /*$(selector).slick({
-                    dots: true,
-                    infinite: false,
-                    speed: 300,
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                    responsive: [
-                        {
-                          breakpoint: fnlprjt.Configs.views.medium,
-                          settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                            infinite: true,
-                            dots: true
                           }
-                        },
-                        {
-                          breakpoint: fnlprjt.Configs.views.small,
-                          settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
-                          }
-                        },
-                        {
-                          breakpoint: fnlprjt.Configs.views.xsmall,
-                          settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                          }
-                        }
-                        // You can unslick at a given breakpoint now by adding:
-                        // settings: "unslick"
-                        // instead of a settings object
-                    ]
-                });*/
-            }
-			this.init = function (selector) {
+			this.init = function (data) {
 				//console.log("Carousel");
-                this.initCarousel(selector);
+                this.initCarousel(data);
 				return this;
 			};
 		}
