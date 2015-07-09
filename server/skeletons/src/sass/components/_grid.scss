@@ -7,25 +7,25 @@ ul, ol {
 }
 
 .pro-theme {
-    color: $text-color-dark;
+    color: get-color('dark');
     a{
-        color: $color-secondary;
+        color: get-color('accent');
         &:hover{
-            color: $color-secondary-dark;
+            color: get-color('accent', 'dark');
         }
     }
     .btn {
-        background: $color-secondary;
-        color: $color-secondary-fallback;
-        border-color: $color-secondary;
+        background: get-color('accent');
+        color: get-color('light');
+        border-color: get-color('accent');
         &:hover{
-            background: $color-secondary-dark;
-            color: $color-secondary-fallback;
+            background: get-color('accent', 'dark');
+            color: get-color('light');
         }
     }
     .component {
         padding: 0px;
-        color: $text-color-dark;
+        color: get-color('dark');
         .component-content {
             padding: 0px;
             display: block;
@@ -36,51 +36,39 @@ ul, ol {
         &.boxed {
             .component-content {
                 padding: $gutterside;
-            background-color: $color-primary-light;
+                background-color: get-color('primary', 'light');
         }
         }
         a{
-            color: $color-secondary;
+            color: get-color('accent');
             &:hover{
-                color: $color-secondary-dark;
+                color: get-color('accent','dark');
             }
         }
-        /*&:nth-child(2n) {
-            color: $text-color-light;
-            .component-content {            
-                background-color: $color-primary;
-            }
-            a{
-                color: $color-secondary-light;
-                &:hover{
-                    color: $color-secondary;
-                }
-            }
-        }*/
         h1, h2, h3 {
             margin-top: 0px;
         }
         .btn {
-            color: $text-color-light;
+            color: get-color('light');
             &:hover{
-                color: $text-color-light;
+                color: get-color('light');
             }
         }
     }
     .card-container {
-        padding-top: 15px;
+        padding-top: $gutterside;
         .component {
-            padding: 0px 15px 15px 0px;
+            padding: 0px $gutterside $gutterside 0px;
         }
         &>.container {
             padding-right: 0px;
         }
     }
     .panel {
-        @include panel-variant($color-primary-light, $text-color-dark, $color-primary-light, $color-primary-light);
+        @include panel-variant(get-color('primary','light'), get-color('dark'), get-color('primary','light'), get-color('primary','light'));
         .panel-heading {
             .panel-title a {
-            color: $text-color-dark;
+                color: get-color('dark');
     }
         }
         }
