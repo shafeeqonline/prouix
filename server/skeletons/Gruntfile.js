@@ -195,7 +195,7 @@ module.exports = function(grunt) {
                     {
                         expand: true,
                         cwd: 'bower_components/slick-carousel/slick/fonts',
-                        dest: '<%= config.tmp %>/styles/fonts',
+                        dest: '<%= config.tmp %>/fonts',
                         src: [
                             '{,*/}*.*',
                             "!_fonts.scss"
