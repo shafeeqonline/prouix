@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-
-
 // ----------------------------------------------------
 // BASE VARIABLES AND MIXINS --------------------------
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
@@ -11,4 +9,10 @@
 
 @import "components/variables";
 @import "components/grid";
-@import "components/initial";
+
+//Sample SASS files
+@import "components/sample_accordion";
+@import "components/sample_cards";
+@import "components/sample_carousel";
+@import "components/sample_slider";
+@import "components/sample_initial";

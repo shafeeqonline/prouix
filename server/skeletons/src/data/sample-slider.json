@@ -1,0 +1,12 @@
+{
+    "column": 2,
+    "slides": [
+        {"title": "First", "description":"Some random text comes here to be displayed as this is just a test", "target":"http://google.com"},
+        {"title": "First", "description":"Some random text comes here to be displayed as this is just a test", "target":"http://google.com"},
+        {"title": "First", "description":"Some random text comes here to be displayed as this is just a test", "target":"http://google.com"},
+        {"title": "First", "description":"Some random text comes here to be displayed as this is just a test", "target":"http://google.com"},
+        {"title": "First", "description":"Some random text comes here to be displayed as this is just a test", "target":"http://google.com"},
+        {"title": "First", "description":"Some random text comes here to be displayed as this is just a test", "target":"http://google.com"},
+        {"title": "First", "description":"Some random text comes here to be displayed as this is just a test", "target":"http://google.com"}
+    ]
+}

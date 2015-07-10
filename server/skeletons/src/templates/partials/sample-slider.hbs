@@ -1,0 +1,21 @@
+<div class="component nmspc-slider static-carousel nmspc-layout-col-{{column}}">
+	<div class="component-content">
+        <div class="slider nmspc-slides" data-slider-infinite="true" data-slidesToShow="2" data-slidesToScroll="2">
+    {{#each slides}}
+            <div class="slide slide-promo">
+				<div class="slide-content">
+	                <h3 class="slide-promo-title">{{title}}</h3>
+	                <div class="slide-promo-description">{{description}}</div>
+	                <div class="slide-promo-button">
+	
+                        <a href={{target}}><button type="button" class="btn">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+    {{/each}}
+        </div>
+</div>
+</div>
+<script type="text/javascript">
+    fnlprjt.addModule("Carousel", ".nmspc-slides");
+</script>

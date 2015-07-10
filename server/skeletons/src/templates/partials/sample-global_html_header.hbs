@@ -23,7 +23,12 @@ component: global_html_header
 		}
     </style>
     <script type="text/javascript">
-        fnlprjt.initUI = {};
+        fnlprjt = {
+            initUI : {},
+            addModule : function(module, selector) {
+                this.initUI[selector] = module;
+            }
+        };
     </script>
 </head>
 

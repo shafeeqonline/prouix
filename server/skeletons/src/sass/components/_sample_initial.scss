@@ -1,0 +1,21 @@
+.main-header {
+	padding: $gutterside 0;
+}
+
+.main-footer {
+	padding: $gutterside 0;
+}
+
+.page-list ul {
+    list-style: outside none none;
+    padding-left: 0px;
+}
+
+.page-list ul li {
+    display: block;
+    padding: 8px 16px;
+}
+
+.page-list ul li a {    
+    width: auto;
+}

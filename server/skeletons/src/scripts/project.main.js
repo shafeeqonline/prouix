@@ -4,7 +4,7 @@
     // DOCUMENT READY & BootStraping init method for all modules loaded in the page...
     //--------------------------------------------------
     $(function () {
-        var components, data, globalComponents = ['Configs', 'Utils', 'Header'];
+        var components, data, globalComponents = ['Configs', 'Utils'];
         for (components in globalComponents) {
             data = globalComponents[components];
             console.log("UTILITY : %s", data);
@@ -18,8 +18,8 @@
             console.log("MODULE : %s", components);
             data = fnlprjt.initUI[components];
             console.log("MODULE : %s", JSON.stringify(data));
-            if (fnlprjt[components]) {
-                fnlprjt[components].init(data);
+            if (fnlprjt[data]) {
+                fnlprjt[data].init(components);
             }			
 		}
     }());

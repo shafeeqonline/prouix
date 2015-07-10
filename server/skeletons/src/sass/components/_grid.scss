@@ -69,10 +69,10 @@ ul, ol {
         .panel-heading {
             .panel-title a {
                 color: get-color('dark');
-    }
+            }
         }
-        }
     }
+}
 
 .nmspc-layout-col-1, .nmspc-layout-col-2, .nmspc-layout-col-3, .nmspc-layout-col-4 {
     float: left;
@@ -171,6 +171,9 @@ ul, ol {
         width: $max-width;
     }
 }
+
+.my-theme { @extend .pro-theme; }
+
 .row {
   @include make-row(gutterwidth);
 }

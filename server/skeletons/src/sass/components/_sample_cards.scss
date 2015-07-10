@@ -1,0 +1,30 @@
+.cards .card {
+    background: get-color('primary','light');
+    color: get-color('dark');
+    padding: $gutterside;
+    width: 100%;
+    height: 100%;
+    @include border-radius(4px);
+}
+
+.cards .card h3 {
+    margin-top: 0px;
+}
+
+.cards .component-content > .row {
+    margin-left: -$gutterside/2;
+    margin-right: -$gutterside/2;
+    /*display: table;
+    width: 100%;*/
+    /*overflow: hidden;*/
+}
+
+.cards .component-content > .row > div {
+    padding-left: $gutterside/2;
+    padding-right: $gutterside/2;
+    /*float: none;
+    display: table-cell;
+    vertical-align: top;*/
+    /*margin-bottom: -99999px;
+    padding-bottom: 99999px;*/
+}
