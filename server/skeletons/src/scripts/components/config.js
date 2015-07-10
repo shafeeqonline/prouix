@@ -81,14 +81,6 @@
             this.isTabletView = function() {
                 return (this.getViewport().size == 'medium');
             };
-            this.setHandlebarHelpers = function() {
-                if(Handlebars) {                
-                    Handlebars.registerHelper('ifCond', function (v1, v2, options) {
-                        if (v1 === v2) {return options.fn(this);}
-                        return options.inverse(this);
-                    });
-                }
-            };
 			this.init = function () {
 				var that = this; //to behave proxy
 				this.getViewport();
@@ -104,8 +96,7 @@
 				// Fires "windowResize" on $(window)
 				//--------------------------------------------------
                 console.log("CONFIG");
-                this.setHandlebarHelpers();
-				return this;
+                return this;
 			};
 		}
 		return new _utils();
