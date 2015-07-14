@@ -1,44 +1,7 @@
-/*$color-primary: #3F51B5;
-$color-primary-light: #C5CAE9;
-$color-primary-dark: #303F9F;
+/* To use any maps provided below you just have to use the mixin name by sending that parameter
+For ex: For z-index of 300 we will use get-zindex(z3)*/
 
-$color-secondary: #FF4081;
-$color-secondary-light: #FF80AB;
-$color-secondary-dark: #F50057;
-$color-secondary-fallback: #FFFFFF;
-
-$text-color-dark: #333333;
-$text-color-dark-secondary: #666666;
-$text-color-dark-disabled: #BDBDBD;
-$text-color-dark-dividers: #E1E1E1;
-
-$text-color-light: #CCCCCC;
-$text-color-light-secondary: #888888;
-$text-color-light-disabled: #424242;
-$text-color-light-dividers: #1E1E1E;*/
-
-/*$color-primary: #3F51B5;
-$color-primary-light: #9FA8DA;
-$color-primary-dark: #303F9F;
-
-$color-secondary: #f44336;
-$color-secondary-light: #ef9a9a;
-$color-secondary-dark: #d32f2f;
-$color-secondary-fallback: #FFFFFF;
-
-$text-color-dark: #212121;
-$text-color-dark-secondary: #666666;
-$text-color-dark-disabled: #BDBDBD;
-$text-color-dark-dividers: #E1E1E1;
-
-$text-color-light: #FFFFFF;
-$text-color-light-secondary: #888888;
-$text-color-light-disabled: #424242;
-$text-color-light-dividers: #1E1E1E;*/
-
-//Shafeeq added
-
-//List of all z-indexes
+//List of all z-indexes to get eagle view
 $zindex-list: (
     z0: 0,
     z1: 100,
@@ -49,6 +12,7 @@ $zindex-list: (
     default: auto,
 );
 
+/*Z-index using the list of z-indexes*/
 @function get-zindex($key) {
     @if map-has-key($zindex-list, $key) {
         @return map-get($zindex-list, $key);
@@ -59,27 +23,6 @@ $zindex-list: (
 }
 
 /*All colors will come here */
-/*$color-list: (
-    white: $text-color-light,
-    page-bg: $color-primary,
-    border: $color-primary,
-    border-light: $color-primary-light,
-    link-active: $color-secondary,
-    link-hover:$color-secondary-light,
-    button-bg: $color-secondary,
-    button-border: $color-secondary-light,
-    button-text: $text-color-light
-);
-
-@function get-color($key) {
-    @if map-has-key($color-list, $key) {
-        @return map-get($color-list, $key);
-    }
-    @else {
-        @return #000000;
-}
-}*/
-
 $color-list: (
     'primary': (
         'base': #3F51B5,
@@ -111,6 +54,7 @@ $color-list: (
     )
 );
 
+/*Use it like this get-color('primary', 'light')*/
 @function get-color($key, $variant:'base') {
     @if map-has-key($color-list, $key) {
         $color-group : map-get($color-list, $key);
@@ -131,12 +75,14 @@ $color-list: (
     }
 }
 
+/*Opacity including older browser support*/
 @mixin opacity($opacity) {
   opacity: $opacity;
   $opacity-ie: $opacity * 100;
   filter: alpha(opacity=$opacity-ie); //IE8
 }
 
+/* Border radius keeping all browsers support */
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
@@ -144,6 +90,7 @@ $color-list: (
           border-radius: $radius;
 }
 
+/*Absolute position css by sending 4 attributes, default being auto*/
 @mixin abs-pos ($top: auto, $right: auto, $bottom: auto, $left: auto) {
   top: $top;
   right: $right;
@@ -183,6 +130,7 @@ $color-list: (
     }
 }
 
+/* Truncate by giving clip,ellipsis */
 @mixin truncate-text($overflow: ellipsis){
   overflow: hidden;
   white-space: nowrap;
@@ -206,6 +154,7 @@ $tablet-width: tabbrkpntpx;
 $desktop-width: deskbrkpntpx;
 $lgdesktop-width: lgdskbrkpntpx;
 
+/*Mobile, tablet, desktop media queries Use by just saying @include and adding its styles inside*/
 @mixin mobile {
   @media (max-width: #{$tablet-width -1px}) {
     @content;

@@ -6,6 +6,8 @@ ul, ol {
     margin-top: 0;
 }
 
+/* If you have a theme for yourself which you need to follow this then extend this pro-theme to that class and make 
+appropriate style change */
 .pro-theme {
     color: get-color('dark');
     a{
@@ -74,6 +76,10 @@ ul, ol {
     }
 }
 
+/*Classes used by sitecore to create different columns structures
+Use classes like .nmspc-layout-col-1,2,3,4 to get appropriate columns where .nmspc-layout-col-4 takes full width
+Use 3 column by givng .nmspc-layout-3  to parent then internally use bootstrap classes .col-sm 8 to take width
+And finall use .nmspc-layout-col-1 to get final width as has been explained in the layout formation documentation.*/
 .nmspc-layout-col-1, .nmspc-layout-col-2, .nmspc-layout-col-3, .nmspc-layout-col-4 {
     float: left;
     position: relative;
@@ -135,12 +141,14 @@ ul, ol {
     }
 }
 
+/* Overwrites all column styles to default. No column structure will be respected if this mixin is included */
 @mixin resetColumns {
     .nmspc-layout-col-1, .nmspc-layout-col-2, .nmspc-layout-col-3, .nmspc-layout-col-4 {
         float: none; width: auto;
     }
 }
 
+/* Making it responsive for mobile by resetting all widths and floats to auto on mobile */
 @include mobile {
     @include resetColumns;
 
@@ -158,6 +166,7 @@ ul, ol {
     }
 }
 
+//Container widths modified based on this project
 .container {
   @include container-fixed($gutterwidth);
 
@@ -172,6 +181,7 @@ ul, ol {
     }
 }
 
+//Add your theme name here and use it in pages where such styling is required.
 .my-theme { @extend .pro-theme; }
 
 .row {
