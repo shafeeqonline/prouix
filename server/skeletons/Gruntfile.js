@@ -159,7 +159,7 @@ module.exports = function(grunt) {
             }
         },
 
-        //Edittable
+        //Edittable : You need to manually enter files that need to be copied to tmp
         //Copies all the files from various sources to respective directories
         //This is where you add all you plugin files that need to get copied from bower & other sources 
         copy: {
