@@ -7,19 +7,19 @@
         var components, data, globalComponents = ['Configs', 'Utils'];
         for (components in globalComponents) {
             data = globalComponents[components];
-            if (fnlprjt[data]) {
-                fnlprjt[data].init();
+            if (nmspc[data]) {
+                nmspc[data].init();
             }
 		}
 		//Page Specific components
-        for (components in fnlprjt.initUI) {
-            data = fnlprjt.initUI[components];
-            if (fnlprjt[data]) {
-                fnlprjt[data].init(components);
+        for (components in nmspc.initUI) {
+            data = nmspc.initUI[components];
+            if (nmspc[data]) {
+                nmspc[data].init(components);
             }			
 		}
     }());
     //--------------------------------------------------
     // end DOCUMENT READY...
     //==================================================
-}($fnlprjt));
+}($nmspc));

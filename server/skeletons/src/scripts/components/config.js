@@ -1,6 +1,6 @@
-(function (fnlprjt, $) {
+(function (nmspc, $) {
 
-    fnlprjt.getCookie =function(cname) {
+    nmspc.getCookie =function(cname) {
             var name = cname + "=";
             var ca = document.cookie.split(';');
             for(var i=0; i<ca.length; i++) {
@@ -10,7 +10,7 @@
             }
             return "";
      };
-     fnlprjt.Configs = (function () {
+     nmspc.Configs = (function () {
         function _config() {
             this.activeClass = 'fnlprjt-active',
             this.views = {
@@ -41,7 +41,7 @@
         }
         return new _config();
      }());
-     fnlprjt.Utils = (function () {
+     nmspc.Utils = (function () {
         function _utils() {
             this.getIEVersion = function(){
                 var agent = navigator.userAgent;
@@ -60,20 +60,20 @@
                 if( $('html').hasClass('lt-ie9') ) {
                     size = 'large';
                 } else {
-                    size = ( w <= fnlprjt.Configs.views.xsmall )? 'xsmall' : size;
-                    size = ( w >  fnlprjt.Configs.views.xsmall && w <= fnlprjt.Configs.views.small  )? 'small'  : size;
-                    size = ( w >  fnlprjt.Configs.views.small  )? 'medium' : size;
-                    size = ( w >  fnlprjt.Configs.views.medium )? 'large'  : size;
-                    size = ( w >  fnlprjt.Configs.views.large  )? 'xlarge' : size;
+                    size = ( w <= nmspc.Configs.views.xsmall )? 'xsmall' : size;
+                    size = ( w >  nmspc.Configs.views.xsmall && w <= nmspc.Configs.views.small  )? 'small'  : size;
+                    size = ( w >  nmspc.Configs.views.small  )? 'medium' : size;
+                    size = ( w >  nmspc.Configs.views.medium )? 'large'  : size;
+                    size = ( w >  nmspc.Configs.views.large  )? 'xlarge' : size;
                 }
 
-                fnlprjt.Configs.viewport = {
+                nmspc.Configs.viewport = {
                     size: size,
                     width: w,
                     height: h
                 };
 
-                return fnlprjt.Configs.viewport;
+                return nmspc.Configs.viewport;
             },
             this.isMobileView = function() {
                 return (this.getViewport().size == 'small' || this.getViewport().size == 'xsmall');
@@ -101,4 +101,4 @@
 		}
 		return new _utils();
 	 }());
-}(window.fnlprjt = ( typeof fnlprjt !== 'undefined' && fnlprjt instanceof Object ) ? fnlprjt : {}, $fnlprjt=jQuery.noConflict()));
+}(window.nmspc = ( typeof nmspc !== 'undefined' && nmspc instanceof Object ) ? nmspc : {}, $nmspc=jQuery.noConflict()));

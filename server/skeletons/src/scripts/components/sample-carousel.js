@@ -1,5 +1,5 @@
-(function (fnlprjt, $) {
-	 fnlprjt.Carousel = (function () {
+(function (nmspc, $) {
+	 nmspc.Carousel = (function () {
 		function _carousel() {
             this.initCarousel = function(selector) {
                 $(selector).each(function() {
@@ -21,4 +21,4 @@
 		}
 		return new _carousel();
 	 }());
-}(window.fnlprjt = ( typeof fnlprjt !== 'undefined' && fnlprjt instanceof Object ) ? fnlprjt : {}, $fnlprjt=jQuery.noConflict()));
+}(window.nmspc = ( typeof nmspc !== 'undefined' && nmspc instanceof Object ) ? nmspc : {}, $nmspc=jQuery.noConflict()));
