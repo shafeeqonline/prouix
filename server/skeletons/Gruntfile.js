@@ -358,7 +358,6 @@ module.exports = function(grunt) {
                         expand: true,
                         cwd: '<%= config.dist %>',
                         src: [
-                            'fonts/kellogg-icons.*',
                             'images/**',
                             '!images/sprites/**',
                             '!images/svg-sprites/**',
