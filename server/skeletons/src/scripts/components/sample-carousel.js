@@ -2,7 +2,6 @@
 	 fnlprjt.Carousel = (function () {
 		function _carousel() {
             this.initCarousel = function(selector) {
-                console.log("CAROUSEL : %s", selector);
                 $(selector).each(function() {
 					var el = $(this);
 					var settings = {
@@ -12,12 +11,10 @@
 						slidesToShow: el.attr("data-slidestoshow") ? el.attr("data-slidestoshow") : 1,
 						slidesToScroll: el.attr("data-slidestoscroll") ? el.attr("data-slidestoscroll") : (el.attr("data-slidestoshow") ? el.attr("data-slidestoshow") : 1)
 					};
-					console.log(JSON.stringify(settings));
 					el.slick(settings);
                 });
                           }
 			this.init = function (selector) {
-				//console.log("Carousel");
                 this.initCarousel(selector);
 				return this;
 			};
