@@ -185,5 +185,5 @@ And finall use .nmspc-layout-col-1 to get final width as has been explained in t
 .my-theme { @extend .pro-theme; }
 
 .row {
-  @include make-row(gutterwidth);
+  @include make-row(gutrwdth);
 }
