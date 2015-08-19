@@ -18,6 +18,7 @@
                 'medium' : deskbrkpnt,
                 'large'  : lgdskbrkpnt
             },
+            this.debug = true,
             this.isMobile = {
                 Android: (function() {
                     return navigator.userAgent.match(/Android/i);
@@ -94,11 +95,19 @@
 				//--------------------------------------------------
 				// RESIZE EVENT
 				// Fires "windowResize" on $(window)
+                //Custom resize on particular breakpoints
 				//--------------------------------------------------
-                console.log("CONFIG");
                 return this;
 			};
 		}
 		return new _utils();
 	 }());
-}(window.nmspc = ( typeof nmspc !== 'undefined' && nmspc instanceof Object ) ? nmspc : {}, $nmspc=jQuery.noConflict()));
+}(window.nmspc = ( typeof nmspc !== 'undefined' && nmspc instanceof Object ) ? nmspc : {}, $nmspc));
+
+var logThis = function(throwLog){
+    if(nmspc.Configs.debug){
+        for(var i = 0 ; i < arguments.length; i++){
+            console.log(arguments[i])
+        }
+    }
+}
