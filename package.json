@@ -1,6 +1,6 @@
 {
-  "name": "ProuiX",
-  "version": "0.023",
+  "name": "prouix",
+  "version": "0.0.23",
   "description": "A scoffolding tool to kickstart/setup your frontend codebase",
   "author": "Shafeeq Ur Rahman <shafeeq.rahman01@gmail.com>",
   "contributors": [{
