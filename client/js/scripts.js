@@ -52,6 +52,7 @@ $('form#package').on('submit', function(e){
 	dataToSend.lrgdeskbrkpnt = $(this).find('input[name="lrgdeskbrkpnt"]').val();
 	dataToSend.deskbrkpnt = $(this).find('input[name="deskbrkpnt"]').val();
 	dataToSend.tabbrkpnt = $(this).find('input[name="tabbrkpnt"]').val();
+	dataToSend.basefont = $(this).find('input[name="basefont"]').val();
 	$(this).find('#packagejson .predefined input:checkbox').each(function(i, v){
 		if($(v).prop('checked')){
 			var version = $(v).parent().find('input:text').val();

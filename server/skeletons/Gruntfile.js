@@ -189,6 +189,7 @@ module.exports = function(grunt) {
                         src: [
                             'favicon.ico',
                             'videos/**/*',
+                            'images/**/*',
                             'scripts/**/*.js'
                         ]
                     },                                        

@@ -6,7 +6,7 @@ path = require('path');
 var readForm = function(request, response){
 
 //Creates a directory with project name if it doesn't exist
-	var destdir = path.join(__dirname,'../../', request.body.projectname);
+	var destdir = path.join(__dirname,'../../../', request.body.projectname);
 	if (!fs.existsSync(destdir)){
 	    fs.mkdirSync(destdir);
 	}
@@ -48,14 +48,14 @@ var readForm = function(request, response){
 	 		replace({
 			  regex: "nmspc",
 			  replacement: request.body.cssname.toLowerCase(),
-			  paths: [destdir +'/src'],
+			  paths: [destdir +'/src/sass', destdir +'/src/templates'],
 			  recursive: true, 
 			  silent: true,
 			});
 			replace({
 			  regex: "nmspcjs",
 			  replacement: request.body.cssname.toUpperCase(),
-			  paths: [destdir +'/src'],
+			  paths: [destdir +'/src/scripts', destdir +'/src/templates/partials'],
 			  recursive: true, 
 			  silent: true,
 			});
@@ -69,35 +69,42 @@ var readForm = function(request, response){
 			replace({
 			  regex: "gutrwdth",
 			  replacement: request.body.gutterwidth,
-			  paths: [destdir +'/src'],
+			  paths: [destdir +'/src/sass/components'],
 			  recursive: true, 
 			  silent: true,
 			});
 			replace({
 			  regex: "contwidth",
 			  replacement: request.body.contwidth,
-			  paths: [destdir +'/src'],
+			  paths: [destdir +'/src/sass/components'],
+			  recursive: true, 
+			  silent: true,
+			});
+			replace({
+			  regex: "basfont",
+			  replacement: request.body.basefont,
+			  paths: [destdir +'/src/sass/components'],
 			  recursive: true, 
 			  silent: true,
 			});
 			replace({
 			  regex: "tabbrkpnt",
 			  replacement: request.body.tabbrkpnt,
-			  paths: [destdir +'/src'],
+			  paths: [destdir +'/src/sass/components', destdir +'/src/scripts/components'],
 			  recursive: true, 
 			  silent: true,
 			});
 			replace({
 			  regex: "deskbrkpnt",
 			  replacement: request.body.deskbrkpnt,
-			  paths: [destdir +'/src'],
+			  paths: [destdir +'/src/sass/components', destdir +'/src/scripts/components'],
 			  recursive: true, 
 			  silent: true,
 			});
 			replace({
 			  regex: "lgdskbrkpnt",
 			  replacement: request.body.lrgdeskbrkpnt,
-			  paths: [destdir +'/src'],
+			  paths: [destdir +'/src/sass/components', destdir +'/src/scripts/components'],
 			  recursive: true, 
 			  silent: true,
 			});
