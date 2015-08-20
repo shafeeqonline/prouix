@@ -1,6 +1,6 @@
-(function (nmspc, $) {
+(function (nmspcjs, $) {
 
-    nmspc.getCookie =function(cname) {
+    nmspcjs.getCookie =function(cname) {
             var name = cname + "=";
             var ca = document.cookie.split(';');
             for(var i=0; i<ca.length; i++) {
@@ -10,7 +10,7 @@
             }
             return "";
      };
-     nmspc.Configs = (function () {
+     nmspcjs.Configs = (function () {
         function _config() {
             this.activeClass = 'fnlprjt-active',
             this.views = {
@@ -42,7 +42,7 @@
         }
         return new _config();
      }());
-     nmspc.Utils = (function () {
+     nmspcjs.Utils = (function () {
         function _utils() {
             this.getIEVersion = function(){
                 var agent = navigator.userAgent;
@@ -61,20 +61,20 @@
                 if( $('html').hasClass('lt-ie9') ) {
                     size = 'large';
                 } else {
-                    size = ( w <= nmspc.Configs.views.xsmall )? 'xsmall' : size;
-                    size = ( w >  nmspc.Configs.views.xsmall && w <= nmspc.Configs.views.small  )? 'small'  : size;
-                    size = ( w >  nmspc.Configs.views.small  )? 'medium' : size;
-                    size = ( w >  nmspc.Configs.views.medium )? 'large'  : size;
-                    size = ( w >  nmspc.Configs.views.large  )? 'xlarge' : size;
+                    size = ( w <= nmspcjs.Configs.views.xsmall )? 'xsmall' : size;
+                    size = ( w >  nmspcjs.Configs.views.xsmall && w <= nmspcjs.Configs.views.small  )? 'small'  : size;
+                    size = ( w >  nmspcjs.Configs.views.small  )? 'medium' : size;
+                    size = ( w >  nmspcjs.Configs.views.medium )? 'large'  : size;
+                    size = ( w >  nmspcjs.Configs.views.large  )? 'xlarge' : size;
                 }
 
-                nmspc.Configs.viewport = {
+                nmspcjs.Configs.viewport = {
                     size: size,
                     width: w,
                     height: h
                 };
 
-                return nmspc.Configs.viewport;
+                return nmspcjs.Configs.viewport;
             },
             this.isMobileView = function() {
                 return (this.getViewport().size == 'small' || this.getViewport().size == 'xsmall');
@@ -102,10 +102,10 @@
 		}
 		return new _utils();
 	 }());
-}(window.nmspc = ( typeof nmspc !== 'undefined' && nmspc instanceof Object ) ? nmspc : {}, $nmspc));
+}(window.nmspcjs = ( typeof nmspcjs !== 'undefined' && nmspcjs instanceof Object ) ? nmspcjs : {}, $nmspcjs));
 
 var logThis = function(throwLog){
-    if(nmspc.Configs.debug){
+    if(nmspcjs.Configs.debug){
         for(var i = 0 ; i < arguments.length; i++){
             console.log(arguments[i])
         }

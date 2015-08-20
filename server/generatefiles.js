@@ -47,7 +47,14 @@ var readForm = function(request, response){
 	  	console.log("All files saved to "+ destdir);
 	 		replace({
 			  regex: "nmspc",
-			  replacement: request.body.cssname,
+			  replacement: request.body.cssname.toLowerCase(),
+			  paths: [destdir +'/src'],
+			  recursive: true, 
+			  silent: true,
+			});
+			replace({
+			  regex: "nmspcjs",
+			  replacement: request.body.cssname.toUpperCase(),
 			  paths: [destdir +'/src'],
 			  recursive: true, 
 			  silent: true,
