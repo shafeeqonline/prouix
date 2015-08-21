@@ -1,5 +1,5 @@
-(function (nmspcjs, $) {
-	 nmspcjs.Carousel = (function () {
+(function (nmspjs, $) {
+	 nmspjs.Carousel = (function () {
 		function _carousel() {
             this.initCarousel = function(selector) {
                 var el = $(selector);
@@ -23,4 +23,4 @@
 		}
 		return new _carousel();
 	 }());
-}(window.nmspcjs = ( typeof nmspcjs !== 'undefined' && nmspcjs instanceof Object ) ? nmspcjs : {}, $nmspcjs));
+}(window.nmspjs = ( typeof nmspjs !== 'undefined' && nmspjs instanceof Object ) ? nmspjs : {}, $nmspjs));

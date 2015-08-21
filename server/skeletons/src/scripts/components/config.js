@@ -1,6 +1,6 @@
-(function (nmspcjs, $) {
+(function (nmspjs, $) {
 
-    nmspcjs.getCookie =function(cname) {
+    nmspjs.getCookie =function(cname) {
             var name = cname + "=";
             var ca = document.cookie.split(';');
             for(var i=0; i<ca.length; i++) {
@@ -10,7 +10,7 @@
             }
             return "";
      };
-     nmspcjs.Configs = (function () {
+     nmspjs.Configs = (function () {
         function _config() {
             this.activeClass = 'fnlprjt-active',
             this.views = {
@@ -42,7 +42,7 @@
         }
         return new _config();
      }());
-     nmspcjs.Utils = (function () {
+     nmspjs.Utils = (function () {
         function _utils() {
             this.getIEVersion = function(){
                 var agent = navigator.userAgent;
@@ -61,20 +61,20 @@
                 if( $('html').hasClass('lt-ie9') ) {
                     size = 'large';
                 } else {
-                    size = ( w <= nmspcjs.Configs.views.xsmall )? 'xsmall' : size;
-                    size = ( w >  nmspcjs.Configs.views.xsmall && w <= nmspcjs.Configs.views.small  )? 'small'  : size;
-                    size = ( w >  nmspcjs.Configs.views.small  )? 'medium' : size;
-                    size = ( w >  nmspcjs.Configs.views.medium )? 'large'  : size;
-                    size = ( w >  nmspcjs.Configs.views.large  )? 'xlarge' : size;
+                    size = ( w <= nmspjs.Configs.views.xsmall )? 'xsmall' : size;
+                    size = ( w >  nmspjs.Configs.views.xsmall && w <= nmspjs.Configs.views.small  )? 'small'  : size;
+                    size = ( w >  nmspjs.Configs.views.small  )? 'medium' : size;
+                    size = ( w >  nmspjs.Configs.views.medium )? 'large'  : size;
+                    size = ( w >  nmspjs.Configs.views.large  )? 'xlarge' : size;
                 }
 
-                nmspcjs.Configs.viewport = {
+                nmspjs.Configs.viewport = {
                     size: size,
                     width: w,
                     height: h
                 };
 
-                return nmspcjs.Configs.viewport;
+                return nmspjs.Configs.viewport;
             },
             this.isMobileView = function() {
                 return (this.getViewport().size == 'small' || this.getViewport().size == 'xsmall');
@@ -102,10 +102,10 @@
 		}
 		return new _utils();
 	 }());
-}(window.nmspcjs = ( typeof nmspcjs !== 'undefined' && nmspcjs instanceof Object ) ? nmspcjs : {}, $nmspcjs));
+}(window.nmspjs = ( typeof nmspjs !== 'undefined' && nmspjs instanceof Object ) ? nmspjs : {}, $nmspjs));
 
 var logThis = function(throwLog){
-    if(nmspcjs.Configs.debug){
+    if(nmspjs.Configs.debug){
         for(var i = 0 ; i < arguments.length; i++){
             console.log(arguments[i])
         }

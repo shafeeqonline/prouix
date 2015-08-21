@@ -45,17 +45,17 @@ var readForm = function(request, response){
 	fse.copy('./server/skeletons/src', destdir+'/src', function (err) {
 	  if (err) return console.error(err)
 	  	console.log("All files saved to "+ destdir);
-	 		replace({
-			  regex: "nmspc",
-			  replacement: request.body.cssname.toLowerCase(),
-			  paths: [destdir +'/src/sass', destdir +'/src/templates'],
+			replace({
+			  regex: "nmspjs",
+			  replacement: request.body.cssname.toUpperCase(),
+			  paths: [destdir +'/src/scripts', destdir +'/src/templates/partials'],
 			  recursive: true, 
 			  silent: true,
 			});
 			replace({
-			  regex: "nmspcjs",
-			  replacement: request.body.cssname.toUpperCase(),
-			  paths: [destdir +'/src/scripts', destdir +'/src/templates/partials'],
+			  regex: "nmspc",
+			  replacement: request.body.cssname.toLowerCase(),
+			  paths: [destdir +'/src/sass', destdir +'/src/templates'],
 			  recursive: true, 
 			  silent: true,
 			});
