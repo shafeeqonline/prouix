@@ -55,7 +55,7 @@ $('form#package').on('submit', function(e){
 	dataToSend.basefont = $(this).find('input[name="basefont"]').val();
 	$(this).find('#packagejson .predefined input:checkbox').each(function(i, v){
 		if($(v).prop('checked')){
-			var version = $(v).parent().find('input:text').val();
+			var version = $(v).parent().parent().find('input:text').val();
 			version = version || "latest";
 			packagedata[$(v).attr('name').toLowerCase()] = version;
 		}
@@ -70,7 +70,7 @@ $('form#package').on('submit', function(e){
 
 	$(this).find('#bowerjson .predefined input:checkbox').each(function(i, v){
 		if($(v).prop('checked')){
-			var version = $(v).parent().find('input:text').val();
+			var version = $(v).parent().parent().find('input:text').val();
 			version = version || "latest";
 			bowerdata[$(v).attr('name').toLowerCase()] = version;
 		}
