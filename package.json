@@ -1,6 +1,6 @@
 {
   "name": "prouix",
-  "version": "0.0.26",
+  "version": "0.0.28",
   "description": "A scoffolding tool to kickstart/setup your frontend codebase",
   "author": "Shafeeq Ur Rahman <shafeeq.rahman01@gmail.com>",
   "contributors": [{
@@ -13,6 +13,9 @@
   }],
   "scripts": {
     "prouix": "node server.js"
+  },
+  "bin": {
+    "prouix": "./bin/prouix"
   },
   "main": "./server.js",
   "repository": {

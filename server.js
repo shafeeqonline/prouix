@@ -5,20 +5,26 @@ var express = require('express'),
 	open = require('opener'),
 	bodyParser = require('body-parser');
 
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
+function initProuix(){
 
-app.get('/', function(req, res){
-	res.sendFile(path.join(__dirname + '/client/views/index.html'));
-});
+	app.use(bodyParser.urlencoded({
+	  extended: true
+	}));
 
-app.use('/js', express.static(__dirname + '/client/js'));
-app.use('/css', express.static(__dirname + '/client/css'));
+	app.get('/', function(req, res){
+		res.sendFile(path.join(__dirname + '/client/views/index.html'));
+	});
 
-app.post('/createpackage', generatefiles.readForm);
+	app.use('/js', express.static(__dirname + '/client/js'));
+	app.use('/css', express.static(__dirname + '/client/css'));
 
-app.listen(3000, function(){
-	console.log('I am  now listening on 3000');
-	open('http://localhost:3000')
-})		 
+	app.post('/createpackage', generatefiles.readForm);
+
+	app.listen(3000, function(){
+		console.log('I am  now listening on 3000');
+		open('http://localhost:3000')
+	});
+}
+
+initProuix();
+module.exports.initProuix = initProuix;
